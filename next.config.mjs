@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // SEO Optimization - Static Export for best performance
+  output: 'export',
+  trailingSlash: true,
+  
   typescript: {
     ignoreBuildErrors: true,
   },
+  
   images: {
     unoptimized: true,
     remotePatterns: [
