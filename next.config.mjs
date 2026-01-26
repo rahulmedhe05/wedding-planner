@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // SEO Optimization - Static Export for best performance
-  output: 'export',
+  // Vercel handles static generation automatically
   trailingSlash: true,
   
   typescript: {
