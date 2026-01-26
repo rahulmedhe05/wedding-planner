@@ -30,21 +30,21 @@ export const metadata: Metadata = {
     address: true,
     telephone: true,
   },
-  metadataBase: new URL("https://yourwebsite.com"),
+  metadataBase: new URL("https://weddingplannervadodara.in"),
   alternates: {
-    canonical: "https://yourwebsite.com",
+    canonical: "https://weddingplannervadodara.in",
   },
   openGraph: {
     title: "Best Wedding Planner in Vadodara | Professional Wedding Planners",
     description:
       "Your trusted wedding planner in Vadodara for dream weddings. Full wedding planning, destination weddings, luxury weddings, budget weddings. 500+ successful weddings.",
-    url: "https://yourwebsite.com",
-    siteName: "Wedding Planners Vadodara",
+    url: "https://weddingplannervadodara.in",
+    siteName: "Wedding Planner Vadodara",
     locale: "en_IN",
     type: "website",
     images: [
       {
-        url: "https://yourwebsite.com/og-image.jpg",
+        url: "https://weddingplannervadodara.in/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Best Wedding Planner in Vadodara",
@@ -55,8 +55,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Best Wedding Planner in Vadodara",
     description: "Professional wedding planners offering complete wedding planning services, destination weddings, luxury weddings in Vadodara",
-    images: ["https://yourwebsite.com/og-image.jpg"],
-    creator: "@weddingplannersvadodara",
+    images: ["https://weddingplannervadodara.in/og-image.jpg"],
+    creator: "@weddingplannervadodara",
   },
   robots: {
     index: true,
@@ -106,11 +106,11 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://yourwebsite.com/#organization",
-        name: "Wedding Planners Vadodara",
-        image: "https://yourwebsite.com/logo.png",
+        "@id": "https://weddingplannervadodara.in/#organization",
+        name: "Wedding Planner Vadodara",
+        image: "https://weddingplannervadodara.in/logo.png",
         description: "Best wedding planner in Vadodara offering professional wedding planning services, destination wedding planning, luxury wedding planning, budget wedding planner services. 500+ successful weddings planned.",
-        url: "https://yourwebsite.com",
+        url: "https://weddingplannervadodara.in",
         telephone: "+916353583148",
         email: "info@weddingplannersvadodara.com",
         address: {
@@ -131,10 +131,10 @@ export default function RootLayout({
       },
       {
         "@type": "Organization",
-        "@id": "https://yourwebsite.com/#organization",
-        name: "Wedding Planners Vadodara",
-        url: "https://yourwebsite.com",
-        logo: "https://yourwebsite.com/logo.png",
+        "@id": "https://weddingplannervadodara.in/#organization",
+        name: "Wedding Planner Vadodara",
+        url: "https://weddingplannervadodara.in",
+        logo: "https://weddingplannervadodara.in/logo.png",
         foundingDate: "2010",
         knowsAbout: [
           "Wedding Planning",

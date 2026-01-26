@@ -2,7 +2,7 @@ import { weddingKeywords } from "@/lib/keywords-config";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://weddingplannersvadodara.in";
+  const baseUrl = "https://weddingplannervadodara.in";
   
   // Current date for lastModified
   const currentDate = new Date().toISOString();
