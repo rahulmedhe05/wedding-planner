@@ -32,12 +32,15 @@ export function MegaFooter() {
         <div className="container mx-auto px-4 py-8">
           <h2 className="text-xl font-bold mb-4 text-center">Wedding Planner in All Areas of Vadodara</h2>
           <div className="flex flex-wrap justify-center gap-2 max-w-6xl mx-auto">
-            {vadodaraAreas.map((area) => (
-              <span
-                key={area}
-                className="text-gray-400 text-sm"
-              >
-                Wedding Planner in {getAreaDisplayName(area)} •
+            {vadodaraAreas.map((area, index) => (
+              <span key={area} className="text-sm">
+                <Link
+                  href={`/wedding-planner/${area}`}
+                  className="text-gray-400 hover:text-pink-400 transition-colors"
+                >
+                  Wedding Planner in {getAreaDisplayName(area)}
+                </Link>
+                {index < vadodaraAreas.length - 1 && <span className="text-gray-600 ml-2">•</span>}
               </span>
             ))}
           </div>
