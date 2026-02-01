@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { businesses, getAreaDisplayName, BusinessConfig } from "@/lib/business-config";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -25,11 +26,26 @@ export function BusinessNav({ currentBusiness, currentArea }: BusinessNavProps) 
           <Link href="/" className="font-bold text-xl">
             {currentBusiness ? (
               <span className="flex items-center gap-2">
-                <span>{currentBusiness.icon}</span>
+                <Image
+                  src="/icon.svg"
+                  alt="Logo"
+                  width={36}
+                  height={36}
+                  className="w-8 h-8 sm:w-9 sm:h-9"
+                />
                 <span className="hidden sm:inline">{currentBusiness.name}</span>
               </span>
             ) : (
-              "All Services"
+              <span className="flex items-center gap-2">
+                <Image
+                  src="/icon.svg"
+                  alt="Logo"
+                  width={36}
+                  height={36}
+                  className="w-8 h-8 sm:w-9 sm:h-9"
+                />
+                <span>All Services</span>
+              </span>
             )}
           </Link>
 

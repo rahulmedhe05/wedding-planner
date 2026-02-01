@@ -78,14 +78,14 @@ const galleryImages = [
 
 // Wedding services list
 const weddingServices = [
-  { icon: Heart, title: "Complete Wedding Planning", desc: "End-to-end wedding planning services" },
-  { icon: MapPin, title: "Destination Weddings", desc: "Plan your dream destination wedding" },
-  { icon: Sparkles, title: "Luxury Weddings", desc: "Premium luxury wedding experiences" },
-  { icon: Calendar, title: "Wedding Coordination", desc: "Day-of coordination services" },
-  { icon: Camera, title: "Photography & Video", desc: "Capture every precious moment" },
-  { icon: Music, title: "Entertainment & DJ", desc: "Music and entertainment planning" },
-  { icon: Utensils, title: "Catering Management", desc: "Delicious culinary experiences" },
-  { icon: Star, title: "Decor & Themes", desc: "Stunning wedding decorations" },
+  { icon: Heart, title: "Complete Planning", desc: "From 'yes' to 'I do' - we handle everything" },
+  { icon: MapPin, title: "Destination Weddings", desc: "Say your vows in paradise" },
+  { icon: Sparkles, title: "Luxury Experiences", desc: "When only the extraordinary will do" },
+  { icon: Calendar, title: "Day-of Coordination", desc: "Relax while we run the show" },
+  { icon: Camera, title: "Vendor Coordination", desc: "The best photographers, caterers & more" },
+  { icon: Music, title: "Entertainment", desc: "Music that moves your soul" },
+  { icon: Utensils, title: "Catering Excellence", desc: "Feasts that your guests will remember" },
+  { icon: Star, title: "Decor & Styling", desc: "Transforming spaces into magic" },
 ];
 
 export default function HomePage() {
@@ -158,21 +158,21 @@ Please share more information about your services and packages.`;
             {/* Left Side - Text Content */}
             <div className="md:col-span-3 text-white">
               <span className="inline-block px-4 py-2 bg-gradient-to-r from-rose-500/30 to-pink-500/30 backdrop-blur-sm rounded-full text-sm font-semibold mb-4 border border-white/20">
-                ✨ #1 Wedding Planner in Vadodara
+                ✨ Crafting Dream Weddings Since 2010
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-                Best{" "}
+                Your{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-pink-300">
-                  Wedding Planner
+                  Perfect Wedding
                 </span>{" "}
-                in Vadodara
+                Starts Here
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 mb-6 max-w-xl">
-                Your trusted <strong>professional wedding planner</strong> for creating unforgettable celebrations. 
-                We offer <strong>destination wedding planning</strong>, <strong>luxury weddings</strong>, and 
-                <strong> budget-friendly packages</strong>.
+                Every love story is unique, and so should be your celebration. From intimate garden 
+                ceremonies to grand royal affairs, we bring your vision to life with creativity, 
+                care, and 15 years of expertise.
               </p>
 
               {/* Trust Badges */}
@@ -351,12 +351,11 @@ Please share more information about your services and packages.`;
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              Our Wedding Planning Services
+              Services Tailored to Your Dream
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              As the <strong>best wedding planner in Vadodara</strong>, we offer comprehensive 
-              <strong> wedding planning services</strong> including <strong>full wedding planning</strong>, 
-              <strong> partial wedding planning</strong>, and <strong>wedding coordination services</strong>.
+              Whether you want us to handle everything from start to finish, or just need 
+              expert guidance on specific elements, we adapt to your needs. Your wedding, your way.
             </p>
           </div>
 
@@ -391,11 +390,11 @@ Please share more information about your services and packages.`;
               Our Portfolio
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              Wedding Gallery
+              Moments We've Captured
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Browse through our stunning collection of <strong>wedding photography</strong> showcasing 
-              our work as the <strong>best wedding planner in Vadodara</strong>
+              Each photograph tells a story of love, laughter, and celebration. 
+              Browse through some of our favorite moments from weddings we've had the honor to plan.
             </p>
           </div>
 
@@ -493,30 +492,28 @@ Please share more information about your services and packages.`;
             {/* Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose Our Wedding Planner Services?
+                Why Couples Trust Us With Their Big Day
               </h2>
               <div className="prose prose-lg max-w-none text-gray-700">
                 <p>
-                  As the <strong>best wedding planner in Vadodara</strong>, we understand that your wedding day 
-                  is one of the most important days of your life. Our team of <strong>professional wedding planners</strong> 
-                  brings 15+ years of experience in creating unforgettable celebrations.
+                  We've witnessed the nervous excitement before a phera, caught the tearful smile of a 
+                  father during kanyadaan, and felt the electric energy of a sangeet night. After 500+ 
+                  weddings, we still get goosebumps at every ceremony.
                 </p>
                 <p>
-                  Whether you're looking for a <strong>luxury wedding planner</strong> for an extravagant celebration, 
-                  a <strong>budget wedding planner</strong> for a beautiful yet affordable wedding, or a 
-                  <strong> destination wedding planner</strong> for your dream location wedding – we have you covered.
+                  Your budget doesn't define your wedding's beauty – creativity does. Whether you're 
+                  dreaming of a palace celebration or an intimate backyard affair, we pour the same 
+                  passion and attention into every detail.
                 </p>
                 <p>
-                  Our <strong>wedding planning services</strong> cater to all traditions - we are experts in 
-                  <strong> Indian wedding planning</strong>, <strong>Hindu wedding planning</strong>, 
-                  <strong> Muslim wedding planning</strong>, <strong>Christian wedding planning</strong>, 
-                  <strong> Gujarati wedding planning</strong>, <strong>Punjabi wedding planning</strong>, and 
-                  <strong> South Indian wedding planning</strong>.
+                  Having planned Hindu, Muslim, Christian, Gujarati, Punjabi, and South Indian 
+                  weddings, we don't just understand traditions – we celebrate them. Every ritual 
+                  matters, every custom is honored.
                 </p>
                 <p>
-                  From <strong>palace wedding planning</strong> at heritage venues to <strong>beach wedding planning</strong> 
-                  at exotic locations, from <strong>hotel wedding planning</strong> to <strong>garden wedding planning</strong> – 
-                  our <strong>wedding event management company</strong> handles it all with perfection.
+                  From the majestic forts of Rajasthan to the serene beaches of Goa, from elegant 
+                  hotels to romantic garden venues – we've transformed spaces across India into 
+                  magical wedding destinations.
                 </p>
               </div>
             </div>
@@ -529,11 +526,11 @@ Please share more information about your services and packages.`;
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Wedding Planner Services in All 40 Areas of Vadodara
+              Serving Every Corner of Vadodara
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Our <strong>local wedding planner</strong> services cover all areas of Vadodara. 
-              Find <strong>wedding planner near me</strong> in your neighborhood.
+              From Alkapuri to Waghodia, we're just a phone call away. Our team knows every 
+              venue, every caterer, and every hidden gem across the city.
             </p>
           </div>
 
@@ -555,7 +552,7 @@ Please share more information about your services and packages.`;
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-            Types of Wedding Planning We Offer
+            We Plan Every Kind of Celebration
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -685,10 +682,10 @@ Please share more information about your services and packages.`;
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            Explore Our Wedding Planning Services
+            Find What You're Looking For
           </h2>
           <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
-            Click on any service below to learn more about our specialized <strong>wedding planner</strong> offerings
+            Explore our specialized services – whether it's a specific style, budget, or cultural tradition
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 max-w-6xl mx-auto">
@@ -710,40 +707,40 @@ Please share more information about your services and packages.`;
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why We Are the Best Wedding Planner in Vadodara
+              What Makes Us Different
             </h2>
             <p className="text-pink-200 text-lg max-w-2xl mx-auto">
-              Our <strong>professional wedding planners</strong> are committed to making your dream wedding a reality
+              It's not just about planning events – it's about crafting memories that last generations
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
               <Star className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Top-Rated Wedding Planners</h3>
+              <h3 className="text-xl font-bold mb-2">Loved by 500+ Couples</h3>
               <p className="text-pink-200">
-                4.9/5 rating from 500+ happy couples
+                Our 4.9/5 rating comes from real couples who trusted us with their dreams
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
               <Users className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Expert Wedding Team</h3>
+              <h3 className="text-xl font-bold mb-2">15 Years of Magic</h3>
               <p className="text-pink-200">
-                Professional wedding planners with 15+ years experience
+                A decade and half of turning wedding dreams into cherished memories
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
               <Award className="w-12 h-12 text-green-400 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Award-Winning Services</h3>
+              <h3 className="text-xl font-bold mb-2">Gujarat's Trusted Name</h3>
               <p className="text-pink-200">
-                Recognized as top wedding planners in Gujarat
+                Recognized excellence across Vadodara and beyond
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
               <CheckCircle className="w-12 h-12 text-purple-400 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Complete Wedding Solutions</h3>
+              <h3 className="text-xl font-bold mb-2">Stress-Free Promise</h3>
               <p className="text-pink-200">
-                Full wedding planning to wedding coordination services
+                You enjoy every moment, we handle every detail
               </p>
             </div>
           </div>
@@ -754,52 +751,52 @@ Please share more information about your services and packages.`;
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-            Wedding Planner Cost & Packages
+            Transparent Pricing, No Surprises
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
-              <h3 className="text-2xl font-bold mb-2">Budget Package</h3>
-              <p className="text-gray-600 mb-4">Perfect for budget wedding planner needs</p>
+              <h3 className="text-2xl font-bold mb-2">Essential</h3>
+              <p className="text-gray-600 mb-4">Day-of coordination & guidance</p>
               <p className="text-3xl font-bold text-pink-600 mb-4">₹50,000+</p>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>✓ Wedding Coordination Services</li>
-                <li>✓ Vendor Recommendations</li>
-                <li>✓ Timeline Management</li>
-                <li>✓ Day-of Coordination</li>
+                <li>✓ Wedding day coordination</li>
+                <li>✓ Vendor recommendations</li>
+                <li>✓ Timeline management</li>
+                <li>✓ On-call support</li>
               </ul>
             </div>
             
             <div className="bg-pink-50 rounded-xl p-6 border-2 border-pink-400 transform scale-105">
-              <span className="bg-pink-600 text-white px-3 py-1 rounded-full text-xs font-bold">POPULAR</span>
-              <h3 className="text-2xl font-bold mb-2 mt-2">Premium Package</h3>
-              <p className="text-gray-600 mb-4">Full wedding planning services</p>
+              <span className="bg-pink-600 text-white px-3 py-1 rounded-full text-xs font-bold">MOST POPULAR</span>
+              <h3 className="text-2xl font-bold mb-2 mt-2">Complete</h3>
+              <p className="text-gray-600 mb-4">Full planning from engagement to farewell</p>
               <p className="text-3xl font-bold text-pink-600 mb-4">₹1,50,000+</p>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>✓ Complete Wedding Planning</li>
-                <li>✓ Venue Selection & Booking</li>
-                <li>✓ All Vendor Management</li>
-                <li>✓ Decor & Theme Design</li>
-                <li>✓ Full Coordination</li>
+                <li>✓ End-to-end planning</li>
+                <li>✓ Venue selection & booking</li>
+                <li>✓ Complete vendor management</li>
+                <li>✓ Decor & theme design</li>
+                <li>✓ Full day coordination</li>
               </ul>
             </div>
             
             <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
-              <h3 className="text-2xl font-bold mb-2">Luxury Package</h3>
-              <p className="text-gray-600 mb-4">Luxury wedding planner experience</p>
+              <h3 className="text-2xl font-bold mb-2">Luxury</h3>
+              <p className="text-gray-600 mb-4">Premium experiences & destinations</p>
               <p className="text-3xl font-bold text-pink-600 mb-4">₹5,00,000+</p>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>✓ Premium Wedding Planning</li>
-                <li>✓ Luxury Venues & Decor</li>
-                <li>✓ International Wedding Planning</li>
-                <li>✓ Destination Wedding Management</li>
-                <li>✓ VIP Guest Services</li>
+                <li>✓ White-glove service</li>
+                <li>✓ Exclusive venues & decor</li>
+                <li>✓ Destination coordination</li>
+                <li>✓ Celebrity vendors</li>
+                <li>✓ VIP guest services</li>
               </ul>
             </div>
           </div>
           
           <p className="text-center mt-8 text-gray-600">
-            Contact us for custom <strong>wedding planner packages</strong> and <strong>wedding planner price</strong> quotes
+            Every wedding is unique. Let's chat and create a custom package that fits your dreams and budget.
           </p>
         </div>
       </section>
@@ -813,24 +810,24 @@ Please share more information about your services and packages.`;
           
           <div className="max-w-3xl mx-auto space-y-4">
             <div className="bg-white rounded-xl p-6 shadow-sm">
-              <h3 className="font-bold text-lg mb-2">What is the wedding planner cost in Vadodara?</h3>
-              <p className="text-gray-600">Our wedding planner charges in India start from ₹50,000 for basic coordination. Full wedding planning services range from ₹1.5 lakhs to ₹5+ lakhs depending on wedding scale and services required.</p>
+              <h3 className="font-bold text-lg mb-2">How much does wedding planning typically cost?</h3>
+              <p className="text-gray-600">Our packages start at ₹50,000 for day-of coordination and go up to ₹5+ lakhs for luxury celebrations. During our free consultation, we'll create a custom proposal that fits your vision and budget – no surprises, complete transparency.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm">
-              <h3 className="font-bold text-lg mb-2">Do you offer budget wedding planner services?</h3>
-              <p className="text-gray-600">Yes! We are known as an affordable wedding planner in Vadodara. Our low budget wedding planner packages help you celebrate beautifully within your means.</p>
+              <h3 className="font-bold text-lg mb-2">We have a tight budget. Can you still help?</h3>
+              <p className="text-gray-600">Absolutely! Some of our most beautiful weddings have been created on modest budgets. We know where to splurge and where to save, which vendors offer great value, and creative alternatives that look expensive but aren't.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm">
-              <h3 className="font-bold text-lg mb-2">Can you plan destination weddings?</h3>
-              <p className="text-gray-600">Absolutely! As a destination wedding planner, we handle weddings across India and internationally. Our destination wedding management includes travel coordination, venue booking, and local vendor management.</p>
+              <h3 className="font-bold text-lg mb-2">Can you plan destination weddings outside Vadodara?</h3>
+              <p className="text-gray-600">We've planned weddings across India – from Udaipur's palaces to Goa's beaches to Kerala's backwaters. We handle everything: venue scouting, travel logistics, local vendors, and guest coordination. You just show up and get married!</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm">
-              <h3 className="font-bold text-lg mb-2">Do you offer luxury wedding planner services?</h3>
-              <p className="text-gray-600">Yes, our luxury wedding planner services include palace weddings, royal wedding planning, and premium international wedding planning with exclusive venues and high-end services.</p>
+              <h3 className="font-bold text-lg mb-2">What if we want a really grand, luxury wedding?</h3>
+              <p className="text-gray-600">We love going all out! Our network includes heritage palaces, celebrity decorators, Michelin-trained caterers, and exclusive entertainers. Whether it's a royal Rajasthani affair or a modern luxury celebration, we'll exceed your expectations.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm">
-              <h3 className="font-bold text-lg mb-2">Which areas do you serve in Vadodara?</h3>
-              <p className="text-gray-600">Our local wedding planner services cover all 40 areas of Vadodara including Alkapuri, Gotri, Manjalpur, Sayajigunj, Fatehgunj, and more. We are your wedding planner near me solution!</p>
+              <h3 className="font-bold text-lg mb-2">How early should we start planning?</h3>
+              <p className="text-gray-600">Ideally, 6-12 months for a local wedding and 12-18 months for destination weddings. But we've pulled off beautiful celebrations in 3 months too! The sooner you reach out, the more options we'll have for venues and vendors.</p>
             </div>
           </div>
         </div>
@@ -840,11 +837,11 @@ Please share more information about your services and packages.`;
       <section className="py-16 md:py-24 bg-gradient-to-r from-pink-600 to-rose-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Plan Your Dream Wedding?
+            Let's Create Something Beautiful Together
           </h2>
           <p className="text-lg text-pink-100 mb-8 max-w-2xl mx-auto">
-            Contact the <strong>best wedding planner in Vadodara</strong> today for a free consultation. 
-            Our <strong>professional wedding planners</strong> are ready to create your perfect celebration!
+            Your perfect wedding is just one conversation away. Tell us about your dreams, 
+            your vision, your love story – and let's make it unforgettable. Free consultation, no obligations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

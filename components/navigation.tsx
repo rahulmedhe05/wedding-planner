@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone } from "lucide-react"
 
@@ -33,7 +34,14 @@ export function Navigation() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <div className="flex items-center pt-2">
+          <div className="flex items-center gap-2 pt-2">
+            <Image
+              src="/icon.svg"
+              alt="Logo"
+              width={40}
+              height={40}
+              className="w-8 h-8 sm:w-10 sm:h-10"
+            />
             <h1 className={`text-lg sm:text-2xl md:text-3xl font-bold transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`}>Nesture Interiors</h1>
           </div>
 

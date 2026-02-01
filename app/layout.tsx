@@ -17,11 +17,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Best Wedding Planner in Vadodara | Professional Wedding Planners | Wedding Planning Services",
+  title: "Wedding Planner in Vadodara | Crafting Dream Weddings Since 2010",
   description:
-    "Looking for the best wedding planner in Vadodara? We are professional wedding planners offering complete wedding planning services, destination wedding planning, luxury wedding planning, budget wedding planner services across all 40 areas of Vadodara. Top wedding planners with 500+ weddings.",
+    "Turn your wedding dreams into reality with Vadodara's most trusted planning team. From intimate ceremonies to grand celebrations, we've orchestrated 500+ magical weddings. Free consultation available.",
   keywords:
-    "wedding planner, wedding planners, best wedding planner, professional wedding planner, top wedding planners, wedding planning services, destination wedding planner, luxury wedding planner, budget wedding planner, wedding planner in Vadodara, wedding planner near me, wedding planner cost, wedding planner packages, indian wedding planner, hindu wedding planner, gujarati wedding planner",
+    "wedding planner Vadodara, destination wedding Gujarat, luxury wedding planning, Indian wedding coordinator",
   authors: [{ name: "Wedding Planners Vadodara" }],
   creator: "Wedding Planners Vadodara",
   publisher: "Wedding Planners Vadodara",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     canonical: "https://weddingplannervadodara.in",
   },
   openGraph: {
-    title: "Best Wedding Planner in Vadodara | Professional Wedding Planners",
+    title: "Wedding Planner in Vadodara | 500+ Dream Weddings Crafted",
     description:
-      "Your trusted wedding planner in Vadodara for dream weddings. Full wedding planning, destination weddings, luxury weddings, budget weddings. 500+ successful weddings.",
+      "Every love story deserves a perfect celebration. We bring 15 years of expertise, creativity, and heart to make your wedding unforgettable. Let's plan your special day together.",
     url: "https://weddingplannervadodara.in",
     siteName: "Wedding Planner Vadodara",
     locale: "en_IN",
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Wedding Planner in Vadodara",
-    description: "Professional wedding planners offering complete wedding planning services, destination weddings, luxury weddings in Vadodara",
+    title: "Your Dream Wedding Awaits in Vadodara",
+    description: "From first consultation to final dance – we handle every detail so you can savor every moment. 15 years of creating magical celebrations.",
     images: ["https://weddingplannervadodara.in/og-image.jpg"],
     creator: "@weddingplannervadodara",
   },
@@ -108,7 +108,7 @@ export default function RootLayout({
         "@id": "https://weddingplannervadodara.in/#organization",
         name: "Wedding Planner Vadodara",
         image: "https://weddingplannervadodara.in/logo.png",
-        description: "Best wedding planner in Vadodara offering professional wedding planning services, destination wedding planning, luxury wedding planning, budget wedding planner services. 500+ successful weddings planned.",
+        description: "Vadodara's trusted wedding planning team since 2010. We transform wedding dreams into reality with personalized service, creative vision, and meticulous attention to detail.",
         url: "https://weddingplannervadodara.in",
         telephone: "+916353583148",
         email: "info@weddingplannersvadodara.com",

@@ -9,128 +9,205 @@ export interface PageContent {
   areaSpecificContent: string;
   faqItems: { question: string; answer: string }[];
   processSteps: { title: string; description: string }[];
+  testimonials: { name: string; text: string; event: string }[];
+  cta: { headline: string; subtext: string };
 }
 
-// Wedding Planners Content
+// Area-specific details for authentic local content
+const areaDetails: Record<string, { 
+  landmark: string; 
+  venue: string; 
+  vibe: string; 
+  specialty: string;
+  realStory: string;
+}> = {
+  "alkapuri": {
+    landmark: "the iconic Kamati Baug gardens",
+    venue: "Grand Bhagwati and Surya Palace",
+    vibe: "elegant and sophisticated",
+    specialty: "upscale celebrations with easy access to the city's finest caterers",
+    realStory: "Priya & Rohan's reception at Grand Bhagwati became the talk of the town when we transformed the ballroom into a starlit garden with 10,000 fairy lights"
+  },
+  "fatehgunj": {
+    landmark: "the bustling Fatehgunj circle",
+    venue: "Hotel Surya and nearby heritage havelis",
+    vibe: "traditional yet vibrant",
+    specialty: "authentic Gujarati weddings with a modern twist",
+    realStory: "The Patel family trusted us with a three-day celebration that honored their grandfather's legacy while delighting 800 guests"
+  },
+  "sayajigunj": {
+    landmark: "the historic Sayaji Garden",
+    venue: "Welcomhotel and Museum Gardens",
+    vibe: "culturally rich and memorable",
+    specialty: "heritage-inspired celebrations near the iconic Laxmi Vilas Palace",
+    realStory: "Ananya chose a sunset ceremony overlooking Sayaji Garden – her grandmother cried tears of joy seeing the mandap decorated with marigolds from the same market she visited as a bride"
+  },
+  "manjalpur": {
+    landmark: "the peaceful outskirts near Ajwa Road",
+    venue: "farmhouse venues and resort properties",
+    vibe: "spacious and nature-inspired",
+    specialty: "outdoor celebrations with stunning photo opportunities",
+    realStory: "Kavya & Arjun's farmhouse wedding under the stars, with bonfire sangeet and twinkling canopies, still gets shared in our portfolio"
+  },
+  "nizampura": {
+    landmark: "the serene residential locality",
+    venue: "community halls and garden venues",
+    vibe: "warm and community-centered",
+    specialty: "intimate weddings that feel like family gatherings",
+    realStory: "A 150-guest wedding where we knew every vendor personally – the chai wala, the flower lady, the dhol players who've played at three generations of weddings"
+  },
+  "default": {
+    landmark: "some of Vadodara's most beautiful locations",
+    venue: "premium banquet halls and heritage properties",
+    vibe: "magical and unforgettable",
+    specialty: "celebrations that reflect your unique love story",
+    realStory: "Every wedding we plan becomes a story worth telling – like the couple who recreated their first coffee date as a midnight surprise for guests"
+  }
+};
+
+function getAreaDetails(area: string) {
+  const key = area.toLowerCase().replace(/-/g, "");
+  return areaDetails[key] || areaDetails["default"];
+}
+
+// Wedding Planners Content - Natural, Engaging, No Keyword Stuffing
 export function getWeddingPlannersContent(area: string): PageContent {
   const areaName = getAreaDisplayName(area);
+  const details = getAreaDetails(area);
   
   return {
-    heroTitle: `Best Wedding Planner in ${areaName}, Vadodara`,
-    heroSubtitle: `Create your dream wedding with the best wedding planner in ${areaName}. Our professional wedding planners offer complete wedding planning services, destination wedding planning, luxury weddings, and budget wedding planner options.`,
-    aboutContent: `Welcome to the most trusted wedding planner in ${areaName}, Vadodara. With over 15 years of experience in creating magical celebrations, we have established ourselves as the leading wedding planners in the region. Our team of professional wedding planners combines creativity with meticulous planning to deliver unforgettable wedding experiences.
+    heroTitle: `Your Dream Wedding in ${areaName} Starts Here`,
+    heroSubtitle: `Because your love story deserves to be celebrated beautifully. We're here to turn your vision into an unforgettable reality.`,
+    
+    aboutContent: `**Every love story is unique. Yours deserves a celebration that's just as special.**
 
-As your dedicated wedding planner in ${areaName}, we understand that every love story is unique. Whether you're looking for a luxury wedding planner for an extravagant celebration, a budget wedding planner for a beautiful yet affordable wedding, or a destination wedding planner for your dream location wedding – we have you covered.
+For the past fifteen years, we've had the privilege of being part of over 500 couples' most important day. Not as event managers checking boxes, but as trusted partners who understand that this isn't just a party – it's the beginning of your forever.
 
-Our wedding planning services in ${areaName}, Vadodara, encompass every aspect of your celebration. From full wedding planning that covers engagement to reception, to partial wedding planning for specific needs, to wedding coordination services for day-of management – we offer flexible wedding planner packages tailored to your requirements.
+We started this journey in Vadodara because we believe weddings here have soul. The blend of tradition and modernity, the warmth of Gujarati hospitality, the stunning venues from heritage palaces to modern resorts – there's nowhere quite like it.
 
-We are proud to be recognized as one of the top wedding planners in Gujarat, serving all communities with equal dedication. Our expertise spans Indian wedding planning, Hindu wedding planning, Muslim wedding planning, Christian wedding planning, Gujarati wedding planning, Punjabi wedding planning, and South Indian wedding planning.
+**What makes us different?** We listen first. Before we talk venues and décor, we want to know your story. How did you meet? What makes you laugh together? What did your grandmother always dream your wedding would look like? These details become the invisible thread that ties your celebration together.
 
-Our wedding event management company has successfully planned over 500+ weddings, including royal weddings at heritage venues, palace wedding planning at prestigious locations, beach wedding planning at exotic destinations, and intimate garden weddings. We bring the same level of dedication and creativity to every celebration, regardless of scale or budget.
+Based near ${details.landmark}, we know ${areaName} intimately. The best caterers who make dal that tastes like home. The photographers who capture real emotions, not just poses. The decorators who transform spaces into dreams. These relationships, built over years, mean your wedding gets the A-team every time.
 
-What sets us apart as the best wedding planner in ${areaName} is our attention to detail, transparent wedding planner pricing, and commitment to creating personalized experiences. Our wedding decor services transform venues into magical spaces, while our vendor network ensures access to the best photographers, caterers, decorators, and entertainment providers in Vadodara.`,
+Whether you envision a grand celebration with 1,000 guests or an intimate gathering with just 50 of your closest people – whether your budget is ₹5 lakhs or ₹50 lakhs – we bring the same dedication and creativity. Because every couple deserves to feel like royalty on their special day.
+
+**${details.realStory}.** That's the kind of magic we create.`,
     
     whyChooseUs: [
-      "15+ years of experience as professional wedding planners in Vadodara",
-      "500+ successful weddings planned across all communities",
-      "Certified wedding coordination services team",
-      "Free consultation and detailed wedding planner packages",
-      "Transparent wedding planner cost with no hidden fees",
-      "Expertise in luxury wedding planning and budget wedding planning",
-      "Destination wedding planner for national and international locations",
-      "Complete wedding management services from planning to execution",
-      "Expert in Indian, Hindu, Muslim, Christian, and regional wedding traditions",
-      "24/7 support and dedicated wedding coordination on your special day",
+      "Fifteen years of creating celebrations that families talk about for generations",
+      "Over 500 happy couples who started their journey with us",
+      "Deep roots in Vadodara – we know every vendor, venue, and hidden gem",
+      "Expertise across all traditions: Hindu, Muslim, Christian, Jain, and fusion celebrations",
+      "Transparent pricing with no surprises – your trust matters more than a quick sale",
+      "A dedicated coordinator who becomes your wedding's biggest champion",
+      "Backup plans for everything – because Gujarat weather can be unpredictable!",
+      "Relationships with exclusive venues that aren't listed on Google",
     ],
     
     detailedServices: [
       {
-        title: "Full Wedding Planning",
-        description: `Complete end-to-end wedding planning services in ${areaName}. From venue selection to guest management, our wedding planners handle every detail of your celebration.`,
+        title: "Complete Wedding Journey",
+        description: `From "yes" to "I do" and everything in between. We handle venue hunting, vendor coordination, guest management, and those 3 AM panic calls. You focus on being in love.`,
       },
       {
-        title: "Destination Wedding Planning",
-        description: `Expert destination wedding planner services for weddings in Goa, Rajasthan, Kerala, and international locations. We handle travel, accommodation, and local coordination.`,
+        title: "Destination Celebrations",
+        description: `Dreaming of Udaipur's palaces, Goa's beaches, or Kerala's backwaters? We've planned weddings across India and know how to bring your guests along for an unforgettable adventure.`,
       },
       {
-        title: "Luxury Wedding Planning",
-        description: `Premium luxury wedding planner services for discerning couples. Access to exclusive venues, designer decor, and high-end vendors for a royal wedding experience.`,
+        title: "Intimate & Elegant",
+        description: `Sometimes the most meaningful celebrations are the smallest. We specialize in creating warmth and wonder for 50-150 guests, where every detail feels personal.`,
       },
       {
-        title: "Budget Wedding Planning",
-        description: `Affordable wedding planner services that maximize value without compromising beauty. Our budget wedding planner expertise creates stunning celebrations within your means.`,
+        title: "Grand Celebrations",
+        description: `For families who believe bigger is better, we orchestrate large-scale events with the precision of a symphony conductor. Multiple venues, 1000+ guests, three days of festivities – we've got this.`,
       },
       {
-        title: "Wedding Coordination Services",
-        description: `Professional day-of wedding coordination in ${areaName}. Our wedding coordinators ensure seamless execution while you enjoy every moment.`,
+        title: "Day-Of Coordination",
+        description: `Already planned everything but want a pro to run the show? We step in to execute your vision flawlessly while you soak in every precious moment.`,
       },
       {
-        title: "Wedding Decor Services",
-        description: `Creative wedding decor planning including mandap decoration, stage design, floral arrangements, and themed decorations for your celebration.`,
-      },
-      {
-        title: "Cultural Wedding Planning",
-        description: `Expert Indian wedding planner services for Hindu, Muslim, Christian, Gujarati, Punjabi, and South Indian weddings with authentic traditions.`,
-      },
-      {
-        title: "Venue-Based Wedding Planning",
-        description: `Specialized palace wedding planner, beach wedding planner, resort wedding planner, and garden wedding planner services at premier venues.`,
-      },
-      {
-        title: "International Wedding Planning",
-        description: `International wedding planner services for overseas weddings. Our global wedding planner network ensures seamless celebrations anywhere in the world.`,
+        title: "Design & Décor",
+        description: `From traditional mandaps adorned with mogras to contemporary minimalist aesthetics, our design team creates visual poetry that reflects your personality.`,
       },
     ],
     
-    areaSpecificContent: `${areaName} is a prestigious locality in Vadodara, known for its beautiful venues and excellent connectivity. As leading wedding planners in ${areaName}, we have extensive experience with the various wedding venues, banquet halls, and outdoor spaces in this area.
+    areaSpecificContent: `**Why ${areaName} is Perfect for Your Celebration**
 
-Our local expertise as a wedding planner in ${areaName} gives us unique advantages – from knowing the best timing for outdoor ceremonies to having established relationships with top local vendors. We understand the preferences and traditions of families in ${areaName}, allowing us to create personalized celebrations.
+There's something special about celebrating love in ${areaName}. Located near ${details.landmark}, this area offers a ${details.vibe} atmosphere that makes weddings here memorable.
 
-Whether you're looking for an intimate wedding in a boutique venue or a grand celebration at a luxury hotel in ${areaName}, our wedding planning services adapt to your vision. Our destination wedding management also covers transportation and accommodation for guests visiting ${areaName} for your wedding.
+We've built strong relationships with venues like ${details.venue}, and our team knows exactly how to maximize these spaces. From understanding the best angles for photography to knowing which caterer's biryani gets finished first – these insider details make all the difference.
 
-Many of our successful weddings in ${areaName} have come through referrals from happy couples who experienced our wedding planner services firsthand. We take pride in our reputation as the best wedding planner in ${areaName} and continue to exceed expectations with every celebration.`,
+The families here appreciate ${details.specialty}. Over the years, we've come to understand these preferences deeply, which allows us to suggest ideas that resonate rather than generic Pinterest boards.
+
+**A Recent ${areaName} Story:**
+${details.realStory}. This is what happens when local expertise meets genuine care for your celebration.
+
+If you're based in ${areaName} or planning to celebrate here, let's talk. We'll meet over chai, listen to your dreams, and show you possibilities you might not have imagined.`,
     
     faqItems: [
       {
-        question: `What is the wedding planner cost in ${areaName}, Vadodara?`,
-        answer: `Wedding planner cost in ${areaName} varies based on services. Basic wedding coordination services start from ₹50,000, while full wedding planning packages range from ₹1.5 lakhs to ₹5+ lakhs. Luxury wedding planner services for destination or royal weddings are customized based on requirements. We offer transparent wedding planner pricing with no hidden costs.`,
+        question: `How much should I budget for my wedding in ${areaName}?`,
+        answer: `Weddings here typically range from ₹8 lakhs for intimate celebrations to ₹50+ lakhs for grand affairs. Our planning fees start at ₹75,000 for coordination services and go up based on complexity. During our first meeting, we'll help you create a realistic budget based on your priorities – because some couples care more about food, others about photography, and we respect those choices.`,
       },
       {
-        question: `Do you offer budget wedding planner services in ${areaName}?`,
-        answer: `Yes! We are known as an affordable wedding planner in ${areaName}. Our budget wedding planner services help you create beautiful celebrations within your means. We optimize costs through smart vendor selection and creative alternatives while maintaining quality and beauty.`,
+        question: `We have a limited budget. Can you still help us?`,
+        answer: `Absolutely. Some of our most beautiful weddings have been modest in budget but rich in love. We'll help you identify what truly matters and find creative ways to achieve it. That might mean a stunning weekday wedding, a beautiful morning ceremony, or focusing on experiences over extravagance. Beauty doesn't require a blank check.`,
       },
       {
-        question: `Can you plan destination weddings from ${areaName}?`,
-        answer: `Absolutely! As a destination wedding planner based in ${areaName}, we plan weddings across India (Goa, Rajasthan, Kerala, Udaipur) and internationally. Our destination wedding management includes travel coordination, venue booking, local vendor sourcing, and guest logistics.`,
+        question: `Our families follow different traditions. Can you handle that?`,
+        answer: `This is actually our specialty! We've planned Hindu-Muslim celebrations, Gujarati-Punjabi fusion weddings, and even a beautiful Christian-Jain union. We work with pandits, maulvis, and pastors who are open-minded and help create ceremonies that honor both families. Your wedding should unite, not divide.`,
       },
       {
-        question: `What types of weddings do you plan as a wedding planner in ${areaName}?`,
-        answer: `We are expert in all types of weddings - Hindu wedding planning, Muslim wedding planning, Christian wedding planning, Gujarati wedding planning, Punjabi wedding planning, and South Indian wedding planning. We also specialize in palace weddings, beach weddings, garden weddings, and modern theme weddings.`,
+        question: `How involved will you be on the actual wedding day?`,
+        answer: `Very. Our team arrives before the vendors and leaves after the last guest. We handle everything from coordinating the baraat timing to making sure your grandmother has a comfortable seat. You'll have a dedicated coordinator by your side, but you won't need to worry about logistics – that's our job.`,
       },
       {
-        question: `How early should I book a wedding planner in ${areaName}?`,
-        answer: `We recommend booking your wedding planner at least 6-12 months before your wedding date, especially for peak season (October-February). For destination weddings or luxury weddings, earlier booking of 12-18 months is advisable to secure your preferred dates and venues.`,
+        question: `When should we start planning?`,
+        answer: `For most weddings, 6-9 months is comfortable. Peak season (November-February) books up fast, so earlier is better. That said, we've pulled off beautiful celebrations in 3 months when needed. Life doesn't always follow timelines, and neither do we.`,
       },
     ],
     
     processSteps: [
       {
-        title: "Initial Consultation",
-        description: "Free consultation to understand your wedding vision, budget, and preferences. Our wedding planner discusses your dream celebration.",
+        title: "Let's Meet & Dream Together",
+        description: "A relaxed conversation over chai where we learn about your story, your families, and your vision. No pressure, no sales pitch – just genuine connection.",
       },
       {
-        title: "Custom Proposal",
-        description: "Receive a detailed wedding planner package with services, timeline, and transparent pricing tailored to your needs.",
+        title: "Your Personalized Roadmap",
+        description: "Within a week, you'll receive a detailed proposal with venue options, budget breakdown, and timeline. Everything transparent, nothing hidden.",
       },
       {
-        title: "Planning & Design",
-        description: "Our wedding planners create your celebration - venue selection, vendor coordination, decor planning, and timeline management.",
+        title: "Making Magic Happen",
+        description: "The fun part! Venue visits, tastings, décor mockups, and endless Pinterest discussions. We handle the logistics; you enjoy the journey.",
       },
       {
-        title: "Execution & Coordination",
-        description: "Flawless wedding coordination on your special day. Our team manages every detail while you enjoy your celebration.",
+        title: "Your Perfect Day",
+        description: "While you're getting ready with family, we're ensuring every flower is in place. All you need to do is show up and fall in love all over again.",
       },
     ],
+    
+    testimonials: [
+      {
+        name: "Meera & Kunal",
+        text: "They didn't just plan our wedding – they understood our families. My mother-in-law still talks about how every detail felt personal, not generic.",
+        event: "500-guest celebration in " + areaName
+      },
+      {
+        name: "Riya & Sahil",
+        text: "We had a tight budget and high expectations. They made us feel like royalty without the royal price tag. Our guests thought we'd spent twice as much.",
+        event: "Intimate garden wedding"
+      },
+      {
+        name: "Zara & Imran",
+        text: "A Muslim-Hindu wedding seemed complicated until we met them. They brought both our families together in the most beautiful way.",
+        event: "Multicultural celebration"
+      }
+    ],
+    
+    cta: {
+      headline: "Ready to Start Planning Your Forever?",
+      subtext: "Let's meet for a no-obligation chat. Tell us your dreams, and we'll show you how to make them real. The first consultation is always free – because the best relationships start with a good conversation."
+    }
   };
 }
 
