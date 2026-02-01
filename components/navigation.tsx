@@ -42,7 +42,7 @@ export function Navigation() {
               height={40}
               className="w-8 h-8 sm:w-10 sm:h-10"
             />
-            <h1 className={`text-lg sm:text-2xl md:text-3xl font-bold transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`}>Nesture Interiors</h1>
+            <h1 className={`text-lg sm:text-2xl md:text-3xl font-bold transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`}>Wedding Planner Vadodaraadodara</h1>
           </div>
 
           {/* Desktop Navigation */}
