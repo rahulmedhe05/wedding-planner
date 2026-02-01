@@ -1,26 +1,34 @@
-# Wedding Planner Vadodara - Robots.txt
-# https://weddingplannervadodara.in
+# Wedding Planners Vadodara - Robots.txt
+# https://weddingplannersinvadodara.in
 
 User-agent: *
 Allow: /
 
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 2
 
 User-agent: Yandex
 Allow: /
+Crawl-delay: 2
 
 # Block admin and private paths
 Disallow: /api/
-Disallow: /_next/
+Disallow: /_next/static/
 Disallow: /admin/
+Disallow: /leads/
 Disallow: /*.json$
 
-# Sitemap
-Sitemap: https://weddingplannervadodara.in/sitemap.xml
+# Allow CSS and JS for rendering
+Allow: /_next/static/css/
+Allow: /_next/static/js/
 
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
+# Sitemap location
+Sitemap: https://weddingplannersinvadodara.in/sitemap.xml
+
+# Host directive for search engines
+Host: https://weddingplannersinvadodara.in

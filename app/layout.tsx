@@ -31,21 +31,21 @@ export const metadata: Metadata = {
     address: true,
     telephone: true,
   },
-  metadataBase: new URL("https://weddingplannervadodara.in"),
+  metadataBase: new URL("https://weddingplannersinvadodara.in"),
   alternates: {
-    canonical: "https://weddingplannervadodara.in",
+    canonical: "https://weddingplannersinvadodara.in",
   },
   openGraph: {
     title: "Wedding Planner in Vadodara | 500+ Dream Weddings Crafted",
     description:
       "Every love story deserves a perfect celebration. We bring 15 years of expertise, creativity, and heart to make your wedding unforgettable. Let's plan your special day together.",
-    url: "https://weddingplannervadodara.in",
-    siteName: "Wedding Planner Vadodara",
+    url: "https://weddingplannersinvadodara.in",
+    siteName: "Wedding Planners Vadodara",
     locale: "en_IN",
     type: "website",
     images: [
       {
-        url: "https://weddingplannervadodara.in/og-image.jpg",
+        url: "https://weddingplannersinvadodara.in/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Best Wedding Planner in Vadodara",
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Your Dream Wedding Awaits in Vadodara",
     description: "From first consultation to final dance – we handle every detail so you can savor every moment. 15 years of creating magical celebrations.",
-    images: ["https://weddingplannervadodara.in/og-image.jpg"],
-    creator: "@weddingplannervadodara",
+    images: ["https://weddingplannersinvadodara.in/og-image.jpg"],
+    creator: "@weddingplannersvadodara",
   },
   robots: {
     index: true,
@@ -106,13 +106,13 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://weddingplannervadodara.in/#organization",
-        name: "Wedding Planner Vadodara",
-        image: "https://weddingplannervadodara.in/logo.png",
+        "@id": "https://weddingplannersinvadodara.in/#business",
+        name: "Wedding Planners Vadodara",
+        image: "https://weddingplannersinvadodara.in/logo.png",
         description: "Vadodara's trusted wedding planning team since 2010. We transform wedding dreams into reality with personalized service, creative vision, and meticulous attention to detail.",
-        url: "https://weddingplannervadodara.in",
+        url: "https://weddingplannersinvadodara.in",
         telephone: "+916353583148",
-        email: "info@weddingplannersvadodara.com",
+        email: "info@weddingplannersinvadodara.in",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Alkapuri",
@@ -121,21 +121,63 @@ export default function RootLayout({
           postalCode: "390007",
           addressCountry: "IN",
         },
-        sameAs: [],
-        priceRange: "₹₹",
-        serviceArea: {
-          "@type": "City",
-          name: "Vadodara",
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: "22.3072",
+          longitude: "73.1812"
         },
-        areaServed: ["Vadodara", "Alkapuri", "Gotri", "Manjalpur", "Sayajigunj", "Fatehgunj", "Karelibaug", "Akota", "Subhanpura", "Tandalja", "Harni", "Makarpura", "Nizampura", "Race Course", "Ellora Park"],
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            opens: "10:00",
+            closes: "19:00"
+          }
+        ],
+        priceRange: "₹₹-₹₹₹₹",
+        currenciesAccepted: "INR",
+        paymentAccepted: "Cash, Credit Card, UPI, Bank Transfer",
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "523",
+          bestRating: "5",
+          worstRating: "1"
+        },
+        serviceArea: {
+          "@type": "GeoCircle",
+          geoMidpoint: {
+            "@type": "GeoCoordinates",
+            latitude: "22.3072",
+            longitude: "73.1812"
+          },
+          geoRadius: "50000"
+        },
+        areaServed: ["Vadodara", "Alkapuri", "Gotri", "Manjalpur", "Sayajigunj", "Fatehgunj", "Karelibaug", "Akota", "Subhanpura", "Tandalja", "Harni", "Makarpura", "Nizampura", "Race Course", "Ellora Park", "Chhani", "Waghodia Road", "Old Padra Road", "Ajwa Road"],
       },
       {
         "@type": "Organization",
-        "@id": "https://weddingplannervadodara.in/#organization",
-        name: "Wedding Planner Vadodara",
-        url: "https://weddingplannervadodara.in",
-        logo: "https://weddingplannervadodara.in/logo.png",
+        "@id": "https://weddingplannersinvadodara.in/#organization",
+        name: "Wedding Planners Vadodara",
+        url: "https://weddingplannersinvadodara.in",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://weddingplannersinvadodara.in/logo.png",
+          width: "200",
+          height: "200"
+        },
         foundingDate: "2010",
+        founder: {
+          "@type": "Person",
+          name: "Wedding Planners Vadodara Team"
+        },
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+916353583148",
+          contactType: "customer service",
+          availableLanguage: ["English", "Hindi", "Gujarati"],
+          areaServed: "IN"
+        },
         knowsAbout: [
           "Wedding Planning",
           "Destination Wedding",
@@ -151,6 +193,88 @@ export default function RootLayout({
           "Wedding Management",
         ],
       },
+      {
+        "@type": "Service",
+        "@id": "https://weddingplannersinvadodara.in/#service",
+        name: "Wedding Planning Services",
+        provider: {
+          "@id": "https://weddingplannersinvadodara.in/#business"
+        },
+        serviceType: "Wedding Planning",
+        description: "Complete wedding planning services including venue selection, vendor management, decor, catering coordination, and day-of coordination.",
+        areaServed: {
+          "@type": "City",
+          name: "Vadodara",
+          containedInPlace: {
+            "@type": "State",
+            name: "Gujarat"
+          }
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Wedding Planning Packages",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Full Wedding Planning",
+                description: "Complete end-to-end wedding planning from venue selection to honeymoon"
+              }
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Partial Wedding Planning",
+                description: "Select services based on your specific needs"
+              }
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Day-of Coordination",
+                description: "Professional coordination on your wedding day"
+              }
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Destination Wedding Planning",
+                description: "Planning weddings at exotic locations across India"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://weddingplannersinvadodara.in/#website",
+        url: "https://weddingplannersinvadodara.in",
+        name: "Wedding Planners Vadodara",
+        publisher: {
+          "@id": "https://weddingplannersinvadodara.in/#organization"
+        },
+        potentialAction: {
+          "@type": "SearchAction",
+          target: "https://weddingplannersinvadodara.in/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://weddingplannersinvadodara.in/#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://weddingplannersinvadodara.in/"
+          }
+        ]
+      }
     ],
   }
 
