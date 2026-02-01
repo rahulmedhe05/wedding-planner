@@ -55,6 +55,11 @@ export async function generateMetadata({
   const resolvedParams = await params;
   const slug = resolvedParams["area-vadodara"];
   
+  // Handle undefined slug
+  if (!slug) {
+    return { title: "Page Not Found" };
+  }
+  
   // Extract area from slug (remove "-vadodara" suffix)
   const area = slug.replace(/-vadodara$/, "");
   
@@ -100,6 +105,11 @@ export default async function AreaPage({
 }) {
   const resolvedParams = await params;
   const slug = resolvedParams["area-vadodara"];
+  
+  // Handle undefined slug
+  if (!slug) {
+    notFound();
+  }
   
   // Extract area from slug (remove "-vadodara" suffix)
   const area = slug.replace(/-vadodara$/, "");
