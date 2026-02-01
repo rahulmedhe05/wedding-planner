@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { Navigation } from "@/components/navigation"
 import "./globals.css"
 
 const playfairDisplay = Playfair_Display({
@@ -162,6 +163,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans antialiased`}>
+        <Navigation />
         {children}
         <Analytics />
       </body>
