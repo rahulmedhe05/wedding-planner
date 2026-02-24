@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   description: "Professional mehndi artist in Vadodara for bridal mehndi, engagement henna & wedding ceremonies. Arabic, Rajasthani & custom designs. Book now!",
   keywords: "mehndi artist vadodara, bridal mehndi vadodara, henna artist vadodara, wedding mehndi vadodara",
   openGraph: { title: "Mehndi Artist Vadodara | Beautiful Bridal Henna", description: "Expert mehndi artist services in Vadodara.", type: "website", locale: "en_IN" },
-  alternates: { canonical: `https://weddingplannersinvadodara.in/${keywordSlug}/` },
+  alternates: { canonical: `https://primeoneweddings.in/${keywordSlug}/` },
 };
 
 export default function Page() {
@@ -78,8 +78,8 @@ export default function Page() {
       <nav className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl">💒</span>
-            <span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span>
+            <img src="/icon.svg" alt="PrimeOne" className="w-8 h-8" />
+            <span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span>
           </Link>
           <div className="flex items-center gap-4">
             <a href="tel:+916353583148" className="hidden md:flex items-center gap-2 text-pink-600 font-semibold"><Phone className="w-4 h-4" />+91 63535 83148</a>
@@ -116,7 +116,7 @@ export default function Page() {
 
       <section className="py-8 bg-orange-50">
         <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div className="flex flex-col items-center"><Award className="w-10 h-10 text-orange-600 mb-2" /><p className="font-bold text-2xl">500+</p><p className="text-gray-600 text-sm">Brides Served</p></div>
+          <div className="flex flex-col items-center"><Award className="w-10 h-10 text-orange-600 mb-2" /><p className="font-bold text-2xl">2000+</p><p className="text-gray-600 text-sm">Brides Served</p></div>
           <div className="flex flex-col items-center"><Star className="w-10 h-10 text-yellow-500 mb-2" /><p className="font-bold text-2xl">5.0★</p><p className="text-gray-600 text-sm">Rating</p></div>
           <div className="flex flex-col items-center"><CheckCircle className="w-10 h-10 text-green-600 mb-2" /><p className="font-bold text-2xl">100%</p><p className="text-gray-600 text-sm">Organic Henna</p></div>
           <div className="flex flex-col items-center"><Heart className="w-10 h-10 text-pink-600 mb-2" /><p className="font-bold text-2xl">10+</p><p className="text-gray-600 text-sm">Years Experience</p></div>
@@ -213,7 +213,7 @@ export default function Page() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact {keyword}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <a href="tel:+916353583148" className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20"><Phone className="w-8 h-8 mb-3" /><p className="font-bold">Call</p><p>+91 63535 83148</p></a>
-            <a href="mailto:info@weddingplannersinvadodara.in" className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20"><Mail className="w-8 h-8 mb-3" /><p className="font-bold">Email</p><p className="text-sm">info@weddingplannersinvadodara.in</p></a>
+            <a href="mailto:hello@primeoneweddings.in" className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20"><Mail className="w-8 h-8 mb-3" /><p className="font-bold">Email</p><p className="text-sm">hello@primeoneweddings.in</p></a>
             <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl"><MapPin className="w-8 h-8 mb-3" /><p className="font-bold">Location</p><p>Vadodara, Gujarat</p></div>
           </div>
         </div>

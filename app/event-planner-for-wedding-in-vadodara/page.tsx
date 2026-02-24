@@ -215,7 +215,7 @@ const relatedKeywords = [
 ];
 
 export const metadata: Metadata = {
-  title: "Event Planner for Wedding in Vadodara | All Events Expert | 500+ Weddings",
+  title: "Event Planner for Wedding in Vadodara | All Events Expert | 2000+ Weddings",
   description: "Complete event planner for wedding in Vadodara. From engagement to reception, every event planned perfectly. Event planner for wedding expertise since 2009.",
   keywords: "event planner for wedding vadodara, wedding event planner vadodara, event planner for wedding celebrations, wedding function planner vadodara",
   openGraph: {
@@ -223,7 +223,7 @@ export const metadata: Metadata = {
     description: "Every wedding event deserves perfection. Event planner for wedding in Vadodara managing engagements, sangeets, ceremonies & receptions.",
     type: "website",
     locale: "en_IN",
-    url: "https://weddingplannersinvadodara.in/event-planner-for-wedding-in-vadodara/",
+    url: "https://primeoneweddings.in/event-planner-for-wedding-in-vadodara/",
     images: [
       {
         url: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=630&fit=crop",
@@ -239,7 +239,7 @@ export const metadata: Metadata = {
     description: "Multi-event wedding planning excellence. Every function, perfectly executed.",
   },
   alternates: {
-    canonical: "https://weddingplannersinvadodara.in/event-planner-for-wedding-in-vadodara/",
+    canonical: "https://primeoneweddings.in/event-planner-for-wedding-in-vadodara/",
   },
 };
 
@@ -251,8 +251,8 @@ export default function EventPlannerForWeddingInVadodaraPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl">💒</span>
-              <span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span>
+              <img src="/icon.svg" alt="PrimeOne" className="w-8 h-8" />
+              <span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span>
             </Link>
             <div className="flex items-center gap-4">
               <a
@@ -300,7 +300,7 @@ export default function EventPlannerForWeddingInVadodaraPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Users className="w-5 h-5" />
-                  <span>500+ Weddings</span>
+                  <span>2000+ Weddings</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -655,12 +655,12 @@ export default function EventPlannerForWeddingInVadodaraPage() {
                 <p className="opacity-90">+91 63535 83148</p>
               </a>
               <a
-                href="mailto:info@weddingplannersinvadodara.in"
+                href="mailto:hello@primeoneweddings.in"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@weddingplannersinvadodara.in</p>
+                <p className="opacity-90">hello@primeoneweddings.in</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />

@@ -234,7 +234,7 @@ export const metadata: Metadata = {
     description: "Wedding decor planning in Vadodara. Transform venues into dreamscapes with expert decor services.",
     type: "website",
     locale: "en_IN",
-    url: "https://weddingplannersinvadodara.in/wedding-decor-planning-in-vadodara/",
+    url: "https://primeoneweddings.in/wedding-decor-planning-in-vadodara/",
     images: [
       {
         url: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1200&h=630&fit=crop",
@@ -250,7 +250,7 @@ export const metadata: Metadata = {
     description: "Transform your wedding venue into visual poetry. Expert decor planning services.",
   },
   alternates: {
-    canonical: "https://weddingplannersinvadodara.in/wedding-decor-planning-in-vadodara/",
+    canonical: "https://primeoneweddings.in/wedding-decor-planning-in-vadodara/",
   },
 };
 
@@ -262,8 +262,8 @@ export default function WeddingDecorPlanningVadodaraPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl">💒</span>
-              <span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span>
+              <img src="/icon.svg" alt="PrimeOne" className="w-8 h-8" />
+              <span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span>
             </Link>
             <div className="flex items-center gap-4">
               <a
@@ -355,7 +355,7 @@ export default function WeddingDecorPlanningVadodaraPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="flex flex-col items-center">
               <Flower2 className="w-10 h-10 text-rose-500 mb-2" />
-              <p className="font-bold text-2xl">500+</p>
+              <p className="font-bold text-2xl">2000+</p>
               <p className="text-gray-600 text-sm">Venues Transformed</p>
             </div>
             <div className="flex flex-col items-center">
@@ -667,12 +667,12 @@ export default function WeddingDecorPlanningVadodaraPage() {
                 <p className="opacity-90">+91 63535 83148</p>
               </a>
               <a
-                href="mailto:info@weddingplannersinvadodara.in"
+                href="mailto:hello@primeoneweddings.in"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@weddingplannersinvadodara.in</p>
+                <p className="opacity-90">hello@primeoneweddings.in</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />

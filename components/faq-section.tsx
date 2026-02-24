@@ -5,44 +5,44 @@ import { useState } from "react"
 
 const faqs = [
   {
-    question: "What services does Nesture Interiors offer?",
+    question: "What services does PrimeOne Wedding Planners offer?",
     answer:
-      "Nesture Interiors provides comprehensive interior design services including residential interior design, office design, commercial interiors, space planning, 3D visualization, furniture design, and complete project management for homes, offices, and commercial spaces in Bangalore.",
+      "PrimeOne Wedding Planners offers complete wedding planning services including venue selection, décor & theme design, catering management, entertainment & DJ, bridal makeup & mehndi, photography & videography coordination, guest management, invitation design, and day-of coordination across Vadodara and Gujarat.",
   },
   {
-    question: "How much does interior design cost in Bangalore?",
+    question: "How much does a wedding planner cost in Vadodara?",
     answer:
-      "Our pricing is transparent and tailored to your needs. We offer packages starting from ₹99,999 for single room makeovers to custom quotes for luxury commercial projects. All packages include professional consultation and 3D visualization.",
+      "Our wedding packages start from ₹1,50,000 for intimate ceremonies and go up to custom quotes for grand destination weddings. Every package includes a dedicated wedding coordinator, vendor management, and on-ground execution. We work with every budget to create your dream wedding.",
   },
   {
-    question: "Do you provide 3D visualization before execution?",
+    question: "Do you plan destination weddings outside Vadodara?",
     answer:
-      "Yes! We provide advanced 3D visualization and walk-through for all our premium and commercial packages. This helps you see the design before any execution begins, ensuring complete satisfaction.",
+      "Yes! We specialize in destination weddings across India — from royal palaces in Rajasthan to beach venues in Goa and Kerala. Our team handles everything from travel logistics to on-site coordination, so you can enjoy a stress-free destination celebration.",
   },
   {
-    question: "What is your project timeline?",
+    question: "How far in advance should I book a wedding planner?",
     answer:
-      "Project timelines vary based on project size and complexity. Our basic makeover takes 3 weeks, premium home design takes 6-8 weeks, and commercial projects have customized timelines. We ensure quality without rushing.",
+      "We recommend booking 6-12 months in advance for the best venue and vendor availability. However, we also handle last-minute weddings with our experienced rapid-planning team. Contact us anytime — we'll work around your timeline.",
   },
   {
-    question: "Do you handle installation and project management?",
+    question: "Do you handle all types of weddings — Hindu, Muslim, Christian?",
     answer:
-      "Absolutely! We provide complete project management, installation supervision, and on-site support. Our team ensures every detail is executed to perfection according to the approved design.",
+      "Absolutely! Our team has deep experience planning Hindu, Muslim, Christian, Jain, Sikh, and inter-faith weddings. We understand the rituals, customs, and traditions of each ceremony and ensure every cultural detail is honored perfectly.",
   },
   {
-    question: "Are you available for interior design in all areas of Bangalore?",
+    question: "Can you work within a tight budget?",
     answer:
-      "Yes, we serve all premium areas of Bangalore including Koramangala, Indiranagar, Whitefield, HSR Layout, Jayanagar, JP Nagar, Marathahalli, Electronic City, and surrounding localities. We also offer services across Karnataka.",
+      "Yes, we pride ourselves on creating beautiful weddings for every budget. Our team has strong vendor relationships across Vadodara that allow us to negotiate the best rates. We'll maximize your budget without compromising on quality or experience.",
   },
   {
-    question: "Can you design both modern and traditional interiors?",
+    question: "What areas in Vadodara do you serve?",
     answer:
-      "Yes, our talented designers specialize in multiple styles including modern, minimalist, traditional, luxury, and fusion designs. We customize every design to match your lifestyle and preferences.",
+      "We serve all areas of Vadodara including Alkapuri, Gotri, Manjalpur, Fatehgunj, Karelibaug, Akota, Waghodia Road, Harni, Sama, Tandalja, and surrounding areas. We also plan weddings across Gujarat and pan-India destinations.",
   },
   {
-    question: "How do I get started with Nesture Interiors?",
+    question: "How do I get started with PrimeOne Wedding Planners?",
     answer:
-      "Getting started is easy! Contact us via WhatsApp, phone, or fill our online form. We'll schedule a free consultation to understand your vision, space, and budget, then propose the best design solution for you.",
+      "Getting started is easy! Call us at +91 63535 83148, WhatsApp us, or fill out the enquiry form on our website. We'll schedule a free consultation to understand your vision, guest count, budget, and preferences — and then craft a personalized wedding proposal just for you.",
   },
 ]
 
@@ -55,10 +55,10 @@ export function FAQSection() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-accent font-mono uppercase tracking-wider mb-4">FAQ</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-            Frequently Asked Questions About Interior Design
+            Frequently Asked Questions About Wedding Planning
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed font-mono">
-            Find answers to common questions about our interior design services in Bangalore
+            Find answers to common questions about our wedding planning services in Vadodara
           </p>
         </div>
 

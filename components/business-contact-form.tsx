@@ -1,7 +1,7 @@
 "use client";
 
 import { BusinessConfig, getAreaDisplayName } from "@/lib/business-config";
-import { InteriorDesignerForm } from "./forms/interior-designer-form";
+import { InteriorDesignerForm } from "./forms/wedding-designer-form";
 import { RealEstateForm } from "./forms/real-estate-form";
 import { SolarInstallationForm } from "./forms/solar-installation-form";
 import { SkinHairForm } from "./forms/skin-hair-form";
@@ -23,7 +23,7 @@ export function BusinessContactForm({ business, area, keyword }: BusinessContact
 
   // Render the appropriate form based on business slug
   switch (business.slug) {
-    case "interior-designers":
+    case "wedding-designers":
       return <InteriorDesignerForm area={areaName} keyword={keyword} />;
     case "real-estate":
       return <RealEstateForm area={areaName} keyword={keyword} />;

@@ -13,67 +13,67 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 // Metadata needs to be in a separate layout or use generateMetadata for client components
 // Moving metadata to a server component or removing from client component
 
-// Wedding slider images from Unsplash
+// Wedding slider images - Indian weddings
 const sliderImages = [
+  "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=1920&h=1080&fit=crop",
+  "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=1920&h=1080&fit=crop",
+  "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=1920&h=1080&fit=crop",
+  "https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=1920&h=1080&fit=crop",
   "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=1920&h=1080&fit=crop",
 ];
 
-// Wedding gallery images - 50 beautiful wedding photos
+// Wedding gallery images - 50 beautiful Indian wedding photos
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=600&fit=crop", title: "Bride & Groom Portrait" },
-  { id: 2, src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=600&fit=crop", title: "Wedding Reception" },
-  { id: 3, src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=600&fit=crop", title: "Wedding Ceremony" },
-  { id: 4, src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=600&h=600&fit=crop", title: "Bridal Portrait" },
-  { id: 5, src: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&h=600&fit=crop", title: "Wedding Decor" },
+  { id: 1, src: "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=600&h=600&fit=crop", title: "Indian Bride & Groom" },
+  { id: 2, src: "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=600&h=600&fit=crop", title: "Wedding Mandap" },
+  { id: 3, src: "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=600&h=600&fit=crop", title: "Mehndi Ceremony" },
+  { id: 4, src: "https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=600&h=600&fit=crop", title: "Indian Wedding Decor" },
+  { id: 5, src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=600&fit=crop", title: "Wedding Portrait" },
   { id: 6, src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=600&fit=crop", title: "Wedding Venue" },
-  { id: 7, src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&h=600&fit=crop", title: "Couple Dance" },
-  { id: 8, src: "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600&h=600&fit=crop", title: "Wedding Rings" },
-  { id: 9, src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=600&fit=crop", title: "Wedding Bouquet" },
-  { id: 10, src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop", title: "Groom Portrait" },
+  { id: 7, src: "https://images.unsplash.com/photo-1585652757141-8837d676054c?w=600&h=600&fit=crop", title: "Haldi Ceremony" },
+  { id: 8, src: "https://images.unsplash.com/photo-1580824456624-eb60e546de5d?w=600&h=600&fit=crop", title: "Sangeet Night" },
+  { id: 9, src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=600&fit=crop", title: "Bridal Bouquet" },
+  { id: 10, src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=600&h=600&fit=crop", title: "Bridal Portrait" },
   { id: 11, src: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=600&h=600&fit=crop", title: "Wedding Celebration" },
-  { id: 12, src: "https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=600&h=600&fit=crop", title: "Wedding Cake" },
-  { id: 13, src: "https://images.unsplash.com/photo-1505932794465-147d1f1b2c97?w=600&h=600&fit=crop", title: "Wedding Table Setting" },
-  { id: 14, src: "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=600&h=600&fit=crop", title: "Indian Wedding" },
-  { id: 15, src: "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=600&h=600&fit=crop", title: "Wedding Mandap" },
+  { id: 12, src: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&h=600&fit=crop", title: "Wedding Decor" },
+  { id: 13, src: "https://images.unsplash.com/photo-1505932794465-147d1f1b2c97?w=600&h=600&fit=crop", title: "Table Setting" },
+  { id: 14, src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&h=600&fit=crop", title: "Couple Dance" },
+  { id: 15, src: "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600&h=600&fit=crop", title: "Wedding Rings" },
   { id: 16, src: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?w=600&h=600&fit=crop", title: "Wedding Couple" },
-  { id: 17, src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=600&fit=crop", title: "Wedding First Look" },
+  { id: 17, src: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&h=600&fit=crop", title: "Wedding Hall" },
   { id: 18, src: "https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&h=600&fit=crop", title: "Destination Wedding" },
-  { id: 19, src: "https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?w=600&h=600&fit=crop", title: "Wedding Vows" },
-  { id: 20, src: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&h=600&fit=crop", title: "Wedding Hall" },
-  { id: 21, src: "https://images.unsplash.com/photo-1516589091380-5d8e87df6999?w=600&h=600&fit=crop", title: "Bridal Makeup" },
-  { id: 22, src: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&h=600&fit=crop", title: "Wedding Jewellery" },
-  { id: 23, src: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?w=600&h=600&fit=crop", title: "Wedding Photography" },
-  { id: 24, src: "https://images.unsplash.com/photo-1460978812857-470ed1c77af0?w=600&h=600&fit=crop", title: "Wedding Dance Floor" },
-  { id: 25, src: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=600&h=600&fit=crop", title: "Wedding Flowers" },
-  { id: 26, src: "https://images.unsplash.com/photo-1509927083803-4bd519298ac4?w=600&h=600&fit=crop", title: "Wedding Dress" },
-  { id: 27, src: "https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=600&h=600&fit=crop", title: "Wedding Party" },
-  { id: 28, src: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=600&h=600&fit=crop", title: "Wedding Entrance" },
-  { id: 29, src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&h=600&fit=crop", title: "Wedding Sparklers" },
-  { id: 30, src: "https://images.unsplash.com/photo-1546193126-3d94f3e9d0b0?w=600&h=600&fit=crop", title: "Wedding Invitation" },
-  { id: 31, src: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=600&h=600&fit=crop", title: "Beach Wedding" },
-  { id: 32, src: "https://images.unsplash.com/photo-1529636444744-adffc9135a5e?w=600&h=600&fit=crop", title: "Garden Wedding" },
-  { id: 33, src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=600&h=600&fit=crop", title: "Wedding Kiss" },
-  { id: 34, src: "https://images.unsplash.com/photo-1470290378698-263fa7ca60ab?w=600&h=600&fit=crop", title: "Wedding Car" },
-  { id: 35, src: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=600&h=600&fit=crop", title: "Wedding Gift" },
-  { id: 36, src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&h=600&fit=crop", title: "Wedding Toast" },
-  { id: 37, src: "https://images.unsplash.com/photo-1518049362265-d5b2a6467b22?w=600&h=600&fit=crop", title: "Palace Wedding" },
-  { id: 38, src: "https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&h=600&fit=crop", title: "Royal Wedding" },
-  { id: 39, src: "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=600&h=600&fit=crop", title: "Mehndi Ceremony" },
-  { id: 40, src: "https://images.unsplash.com/photo-1585652757141-8837d676054c?w=600&h=600&fit=crop", title: "Sangeet Night" },
-  { id: 41, src: "https://images.unsplash.com/photo-1580824456624-eb60e546de5d?w=600&h=600&fit=crop", title: "Haldi Ceremony" },
-  { id: 42, src: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?w=600&h=600&fit=crop", title: "Wedding Moments" },
-  { id: 43, src: "https://images.unsplash.com/photo-1565784249160-1524451fc3f7?w=600&h=600&fit=crop", title: "Wedding Stage" },
+  { id: 19, src: "https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=600&h=600&fit=crop", title: "Wedding Cake" },
+  { id: 20, src: "https://images.unsplash.com/photo-1518049362265-d5b2a6467b22?w=600&h=600&fit=crop", title: "Palace Wedding" },
+  { id: 21, src: "https://images.unsplash.com/photo-1565784249160-1524451fc3f7?w=600&h=600&fit=crop", title: "Wedding Stage" },
+  { id: 22, src: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?w=600&h=600&fit=crop", title: "Wedding Photography" },
+  { id: 23, src: "https://images.unsplash.com/photo-1460978812857-470ed1c77af0?w=600&h=600&fit=crop", title: "Wedding Dance Floor" },
+  { id: 24, src: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=600&h=600&fit=crop", title: "Wedding Flowers" },
+  { id: 25, src: "https://images.unsplash.com/photo-1509927083803-4bd519298ac4?w=600&h=600&fit=crop", title: "Bridal Lehenga" },
+  { id: 26, src: "https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=600&h=600&fit=crop", title: "Wedding Party" },
+  { id: 27, src: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=600&h=600&fit=crop", title: "Wedding Entrance" },
+  { id: 28, src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&h=600&fit=crop", title: "Wedding Sparklers" },
+  { id: 29, src: "https://images.unsplash.com/photo-1546193126-3d94f3e9d0b0?w=600&h=600&fit=crop", title: "Wedding Invitation" },
+  { id: 30, src: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=600&h=600&fit=crop", title: "Beach Wedding" },
+  { id: 31, src: "https://images.unsplash.com/photo-1529636444744-adffc9135a5e?w=600&h=600&fit=crop", title: "Garden Wedding" },
+  { id: 32, src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=600&h=600&fit=crop", title: "Wedding Kiss" },
+  { id: 33, src: "https://images.unsplash.com/photo-1470290378698-263fa7ca60ab?w=600&h=600&fit=crop", title: "Wedding Car" },
+  { id: 34, src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&h=600&fit=crop", title: "Wedding Toast" },
+  { id: 35, src: "https://images.unsplash.com/photo-1578950435899-d1c1bf932ab2?w=600&h=600&fit=crop", title: "Wedding Fireworks" },
+  { id: 36, src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=600&fit=crop", title: "Wedding Reception" },
+  { id: 37, src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=600&fit=crop", title: "Wedding Ceremony" },
+  { id: 38, src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=600&fit=crop", title: "First Look" },
+  { id: 39, src: "https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?w=600&h=600&fit=crop", title: "Wedding Vows" },
+  { id: 40, src: "https://images.unsplash.com/photo-1525772764200-be829a350797?w=600&h=600&fit=crop", title: "Wedding Details" },
+  { id: 41, src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop", title: "Groom Portrait" },
+  { id: 42, src: "https://images.unsplash.com/photo-1516589091380-5d8e87df6999?w=600&h=600&fit=crop", title: "Bridal Makeup" },
+  { id: 43, src: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&h=600&fit=crop", title: "Wedding Jewellery" },
   { id: 44, src: "https://images.unsplash.com/photo-1519657337289-077653f724ed?w=600&h=600&fit=crop", title: "Wedding Catering" },
   { id: 45, src: "https://images.unsplash.com/photo-1549037173-e3b717902c57?w=600&h=600&fit=crop", title: "Wedding Music" },
-  { id: 46, src: "https://images.unsplash.com/photo-1470290449668-02dd93d9420a?w=600&h=600&fit=crop", title: "Wedding Couple Walk" },
-  { id: 47, src: "https://images.unsplash.com/photo-1525772764200-be829a350797?w=600&h=600&fit=crop", title: "Wedding Details" },
-  { id: 48, src: "https://images.unsplash.com/photo-1578950435899-d1c1bf932ab2?w=600&h=600&fit=crop", title: "Wedding Fireworks" },
-  { id: 49, src: "https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=600&h=600&fit=crop", title: "Wedding Fun" },
-  { id: 50, src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=600&fit=crop", title: "Wedding Memories" },
+  { id: 46, src: "https://images.unsplash.com/photo-1470290449668-02dd93d9420a?w=600&h=600&fit=crop", title: "Couple Walk" },
+  { id: 47, src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=600&fit=crop", title: "Royal Venue" },
+  { id: 48, src: "https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&h=600&fit=crop", title: "Royal Wedding" },
+  { id: 49, src: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?w=600&h=600&fit=crop", title: "Wedding Memories" },
+  { id: 50, src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=600&fit=crop", title: "Wedding Bouquet" },
 ];
 
 // Wedding services list
@@ -158,7 +158,7 @@ Please share more information about your services and packages.`;
             {/* Left Side - Text Content */}
             <div className="md:col-span-3 text-white">
               <span className="inline-block px-4 py-2 bg-gradient-to-r from-rose-500/30 to-pink-500/30 backdrop-blur-sm rounded-full text-sm font-semibold mb-4 border border-white/20">
-                ✨ Crafting Dream Weddings Since 2010
+                ✨ PrimeOne Wedding Planners — Crafting Dream Weddings Since 2010
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
@@ -170,16 +170,16 @@ Please share more information about your services and packages.`;
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 mb-6 max-w-xl">
-                Every love story is unique, and so should be your celebration. From intimate garden 
-                ceremonies to grand royal affairs, we bring your vision to life with creativity, 
-                care, and 15 years of expertise.
+                Every love story is unique, and so should be your celebration. PrimeOne Wedding Planners 
+                transforms intimate garden ceremonies into grand royal affairs with creativity, 
+                care, and 15 years of expertise across Vadodara.
               </p>
 
               {/* Trust Badges */}
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                   <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                  <span className="text-sm font-medium">500+ Weddings</span>
+                  <span className="text-sm font-medium">2000+ Weddings</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                   <Award className="w-5 h-5 text-rose-400" />
@@ -327,7 +327,7 @@ Please share more information about your services and packages.`;
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <p className="text-3xl md:text-4xl font-bold text-pink-600">500+</p>
+              <p className="text-3xl md:text-4xl font-bold text-pink-600">2000+</p>
               <p className="text-gray-600">Weddings Planned</p>
             </div>
             <div>
@@ -462,28 +462,29 @@ Please share more information about your services and packages.`;
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             {/* Image Grid */}
+              {/* About Section Images */}
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=500&fit=crop" 
-                  alt="Wedding Planning"
+                  src="https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=400&h=500&fit=crop" 
+                  alt="Indian Wedding Planning by PrimeOne"
                   className="w-full h-64 object-cover rounded-xl shadow-lg"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=300&fit=crop" 
-                  alt="Wedding Venue"
+                  src="https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=400&h=300&fit=crop" 
+                  alt="Wedding Mandap Decoration"
                   className="w-full h-40 object-cover rounded-xl shadow-lg"
                 />
               </div>
               <div className="space-y-4 pt-8">
                 <img 
-                  src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop" 
-                  alt="Wedding Reception"
+                  src="https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=400&h=300&fit=crop" 
+                  alt="Mehndi Ceremony"
                   className="w-full h-40 object-cover rounded-xl shadow-lg"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=400&h=500&fit=crop" 
-                  alt="Wedding Couple"
+                  src="https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=400&h=500&fit=crop" 
+                  alt="Indian Wedding Decor"
                   className="w-full h-64 object-cover rounded-xl shadow-lg"
                 />
               </div>
@@ -492,28 +493,29 @@ Please share more information about your services and packages.`;
             {/* Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Couples Trust Us With Their Big Day
+                Why Couples Trust PrimeOne With Their Big Day
               </h2>
               <div className="prose prose-lg max-w-none text-gray-700">
                 <p>
-                  We've witnessed the nervous excitement before a phera, caught the tearful smile of a 
-                  father during kanyadaan, and felt the electric energy of a sangeet night. After 500+ 
-                  weddings, we still get goosebumps at every ceremony.
+                  At PrimeOne Wedding Planners, we've witnessed the nervous excitement before a phera, caught the tearful smile of a 
+                  father during kanyadaan, and felt the electric energy of a sangeet night. After planning 500+ 
+                  weddings across Vadodara, we still get goosebumps at every ceremony.
                 </p>
                 <p>
-                  Your budget doesn't define your wedding's beauty – creativity does. Whether you're 
-                  dreaming of a palace celebration or an intimate backyard affair, we pour the same 
-                  passion and attention into every detail.
+                  Founded by Rajesh Patel in 2010, PrimeOne has grown from a small team with big dreams to 
+                  Vadodara's most trusted wedding planning company. Our 25-member team includes dedicated 
+                  coordinators, designers, and vendor specialists who work round-the-clock to make your celebration perfect.
                 </p>
                 <p>
                   Having planned Hindu, Muslim, Christian, Gujarati, Punjabi, and South Indian 
                   weddings, we don't just understand traditions – we celebrate them. Every ritual 
-                  matters, every custom is honored.
+                  matters, every custom is honored. From Navratri-themed sangeets to royal Rajputana mandaps, 
+                  we bring authenticity to every element.
                 </p>
                 <p>
-                  From the majestic forts of Rajasthan to the serene beaches of Goa, from elegant 
-                  hotels to romantic garden venues – we've transformed spaces across India into 
-                  magical wedding destinations.
+                  From the majestic Laxmi Vilas Palace to serene farmhouses in Dabhoi, from five-star 
+                  banquet halls in Alkapuri to elegant garden venues in Gotri – PrimeOne has transformed spaces 
+                  across Vadodara and beyond into magical wedding destinations.
                 </p>
               </div>
             </div>
@@ -702,6 +704,110 @@ Please share more information about your services and packages.`;
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-pink-100 rounded-full text-pink-700 text-sm font-semibold mb-4">
+              <Star className="w-4 h-4" />
+              Client Testimonials
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              What Our Happy Couples Say
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Real stories from real couples who trusted PrimeOne Wedding Planners with their special day
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="bg-pink-50 rounded-2xl p-6 border border-pink-100">
+              <div className="flex items-center gap-4 mb-4">
+                <img src="https://i.pravatar.cc/100?img=32" alt="Priya & Karan Mehta" className="w-14 h-14 rounded-full object-cover border-2 border-pink-300" />
+                <div>
+                  <p className="font-bold text-gray-900">Priya & Karan Mehta</p>
+                  <p className="text-sm text-pink-600">Grand Wedding, Alkapuri</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-5 h-5 fill-yellow-400 text-yellow-400" />)}
+              </div>
+              <p className="text-gray-600 italic">"PrimeOne made our wedding absolutely magical! From the mandap decoration to the sangeet choreography, every detail was perfect. Rajesh bhai and his team handled 800+ guests effortlessly. We can't thank them enough!"</p>
+            </div>
+
+            <div className="bg-pink-50 rounded-2xl p-6 border border-pink-100">
+              <div className="flex items-center gap-4 mb-4">
+                <img src="https://i.pravatar.cc/100?img=47" alt="Sneha & Amit Desai" className="w-14 h-14 rounded-full object-cover border-2 border-pink-300" />
+                <div>
+                  <p className="font-bold text-gray-900">Sneha & Amit Desai</p>
+                  <p className="text-sm text-pink-600">Destination Wedding, Udaipur</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-5 h-5 fill-yellow-400 text-yellow-400" />)}
+              </div>
+              <p className="text-gray-600 italic">"We wanted a palace wedding in Udaipur and PrimeOne delivered beyond our wildest dreams! They managed everything from Vadodara — travel, venue, decor, food — all flawless. Best decision we made was hiring them."</p>
+            </div>
+
+            <div className="bg-pink-50 rounded-2xl p-6 border border-pink-100">
+              <div className="flex items-center gap-4 mb-4">
+                <img src="https://i.pravatar.cc/100?img=25" alt="Ritu & Harsh Patel" className="w-14 h-14 rounded-full object-cover border-2 border-pink-300" />
+                <div>
+                  <p className="font-bold text-gray-900">Ritu & Harsh Patel</p>
+                  <p className="text-sm text-pink-600">Budget Wedding, Gotri</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-5 h-5 fill-yellow-400 text-yellow-400" />)}
+              </div>
+              <p className="text-gray-600 italic">"We had a tight budget but PrimeOne made our wedding look like a million bucks! They found amazing vendors at great prices and the decor was stunning. Our guests still talk about how beautiful everything was."</p>
+            </div>
+
+            <div className="bg-pink-50 rounded-2xl p-6 border border-pink-100">
+              <div className="flex items-center gap-4 mb-4">
+                <img src="https://i.pravatar.cc/100?img=56" alt="Fatima & Irfan Sheikh" className="w-14 h-14 rounded-full object-cover border-2 border-pink-300" />
+                <div>
+                  <p className="font-bold text-gray-900">Fatima & Irfan Sheikh</p>
+                  <p className="text-sm text-pink-600">Nikah Ceremony, Sayajigunj</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-5 h-5 fill-yellow-400 text-yellow-400" />)}
+              </div>
+              <p className="text-gray-600 italic">"PrimeOne understood our cultural requirements perfectly. The nikah setup was elegant and the walima reception was grand. They respected every tradition and added beautiful modern touches. Highly recommended!"</p>
+            </div>
+
+            <div className="bg-pink-50 rounded-2xl p-6 border border-pink-100">
+              <div className="flex items-center gap-4 mb-4">
+                <img src="https://i.pravatar.cc/100?img=41" alt="Aanshi & Dhruv Shah" className="w-14 h-14 rounded-full object-cover border-2 border-pink-300" />
+                <div>
+                  <p className="font-bold text-gray-900">Aanshi & Dhruv Shah</p>
+                  <p className="text-sm text-pink-600">Royal Theme Wedding, Race Course</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-5 h-5 fill-yellow-400 text-yellow-400" />)}
+              </div>
+              <p className="text-gray-600 italic">"From our mehndi at home to the reception at Grand Bhagwati, PrimeOne coordinated 4 events over 3 days without a single hiccup. The team even surprised us with a special fireworks display! Simply the best in Vadodara."</p>
+            </div>
+
+            <div className="bg-pink-50 rounded-2xl p-6 border border-pink-100">
+              <div className="flex items-center gap-4 mb-4">
+                <img src="https://i.pravatar.cc/100?img=15" alt="Megha & Vivek Joshi" className="w-14 h-14 rounded-full object-cover border-2 border-pink-300" />
+                <div>
+                  <p className="font-bold text-gray-900">Megha & Vivek Joshi</p>
+                  <p className="text-sm text-pink-600">Garden Wedding, Manjalpur</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-5 h-5 fill-yellow-400 text-yellow-400" />)}
+              </div>
+              <p className="text-gray-600 italic">"We wanted an outdoor garden wedding and PrimeOne found the perfect venue and created a fairy-tale setup. Even when it rained briefly, they had a backup plan ready within minutes. True professionals!"</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-pink-900 to-rose-800 text-white">
         <div className="container mx-auto px-4">
@@ -710,16 +816,16 @@ Please share more information about your services and packages.`;
               What Makes Us Different
             </h2>
             <p className="text-pink-200 text-lg max-w-2xl mx-auto">
-              It's not just about planning events – it's about crafting memories that last generations
+              It's not just about planning events – PrimeOne crafts memories that last generations
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
               <Star className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Loved by 500+ Couples</h3>
+              <h3 className="text-xl font-bold mb-2">Loved by 2000+ Couples</h3>
               <p className="text-pink-200">
-                Our 4.9/5 rating comes from real couples who trusted us with their dreams
+                PrimeOne's 4.9/5 rating comes from real couples who trusted us with their dreams
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
@@ -733,7 +839,7 @@ Please share more information about your services and packages.`;
               <Award className="w-12 h-12 text-green-400 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Gujarat's Trusted Name</h3>
               <p className="text-pink-200">
-                Recognized excellence across Vadodara and beyond
+                PrimeOne — recognized excellence across Vadodara and beyond
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
@@ -837,10 +943,10 @@ Please share more information about your services and packages.`;
       <section className="py-16 md:py-24 bg-gradient-to-r from-pink-600 to-rose-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let's Create Something Beautiful Together
+            Let PrimeOne Create Something Beautiful For You
           </h2>
           <p className="text-lg text-pink-100 mb-8 max-w-2xl mx-auto">
-            Your perfect wedding is just one conversation away. Tell us about your dreams, 
+            Your perfect wedding is just one conversation away. Tell PrimeOne Wedding Planners about your dreams, 
             your vision, your love story – and let's make it unforgettable. Free consultation, no obligations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

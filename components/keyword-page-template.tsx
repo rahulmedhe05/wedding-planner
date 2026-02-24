@@ -49,24 +49,24 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="flex flex-col items-center">
-              <Users className="w-10 h-10 text-blue-600 mb-2" />
-              <p className="font-bold text-2xl">5000+</p>
-              <p className="text-gray-600 text-sm">Happy Customers</p>
+              <Users className="w-10 h-10 text-pink-600 mb-2" />
+              <p className="font-bold text-2xl">2000+</p>
+              <p className="text-gray-600 text-sm">Weddings Planned</p>
             </div>
             <div className="flex flex-col items-center">
               <Star className="w-10 h-10 text-yellow-500 mb-2" />
               <p className="font-bold text-2xl">4.9/5</p>
-              <p className="text-gray-600 text-sm">Customer Rating</p>
+              <p className="text-gray-600 text-sm">Google Rating</p>
             </div>
             <div className="flex flex-col items-center">
               <Award className="w-10 h-10 text-green-600 mb-2" />
-              <p className="font-bold text-2xl">15+</p>
-              <p className="text-gray-600 text-sm">Years Experience</p>
+              <p className="font-bold text-2xl">Since 2010</p>
+              <p className="text-gray-600 text-sm">Years of Trust</p>
             </div>
             <div className="flex flex-col items-center">
               <Clock className="w-10 h-10 text-purple-600 mb-2" />
               <p className="font-bold text-2xl">24/7</p>
-              <p className="text-gray-600 text-sm">Support Available</p>
+              <p className="text-gray-600 text-sm">Wedding Support</p>
             </div>
           </div>
         </div>
@@ -75,8 +75,8 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
       {/* Full Width Image Banner */}
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src={`https://picsum.photos/seed/${business.slug}-${keyword.slug}-banner/1920/600`}
-          alt={`${keywordName} services in Vadodara`}
+          src="https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=1920&h=600&fit=crop"
+          alt={`${keywordName} services by PrimeOne in Vadodara`}
           className="w-full h-full object-cover"
           loading="lazy"
         />
@@ -84,7 +84,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
         <div className="absolute inset-0 flex items-center justify-center text-white text-center px-4">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">{keywordName}</h2>
-            <p className="text-lg md:text-xl opacity-90">Professional Services in Vadodara</p>
+            <p className="text-lg md:text-xl opacity-90">PrimeOne Wedding Planners, Vadodara</p>
           </div>
         </div>
       </section>
@@ -105,14 +105,14 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
                   Looking for the best <strong>{keywordName}</strong> services in Vadodara? We are the leading 
                   provider of <strong>{keywordName}</strong> solutions across all areas of Vadodara including 
                   Alkapuri, Sayajigunj, Fatehgunj, Manjalpur, Karelibaug, and more. Our expert team specializes 
-                  in <strong>{keywordName}</strong> to deliver outstanding results for homes and businesses throughout Gujarat.
+                  in <strong>{keywordName}</strong> to deliver outstanding results for weddings throughout Vadodara and Gujarat.
                 </p>
               </div>
             </div>
             <div className="order-1 md:order-2">
               <img
-                src={`https://picsum.photos/seed/${business.slug}-${keyword.slug}-about/600/500`}
-                alt={`About ${keywordName} in Vadodara`}
+                src="https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=600&h=500&fit=crop"
+                alt={`About ${keywordName} by PrimeOne in Vadodara`}
                 className="w-full h-80 md:h-96 object-cover rounded-2xl shadow-xl"
                 loading="lazy"
               />
@@ -121,28 +121,34 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
         </div>
       </section>
 
-      {/* Featured Project Images */}
+      {/* Featured Wedding Projects */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             <ImageIcon className="inline-block w-8 h-8 mr-2" style={{ color: business.colors.primary }} />
-            {keywordName} Project Gallery
+            {keywordName} — Our Work
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            View our recent {keywordName.toLowerCase()} projects completed across Vadodara
+            Beautiful moments from our {keywordName.toLowerCase()} projects across Vadodara
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4, 5].map((i) => (
+            {[
+              { src: "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=600&h=400&fit=crop", title: "Grand Mandap" },
+              { src: "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=600&h=400&fit=crop", title: "Mehndi Ceremony" },
+              { src: "https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&h=400&fit=crop", title: "Sangeet Night" },
+              { src: "https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=600&h=400&fit=crop", title: "Floral Decor" },
+              { src: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&h=400&fit=crop", title: "Venue Setup" },
+            ].map((img, i) => (
               <div key={i} className="relative group overflow-hidden rounded-xl shadow-lg">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-${keyword.slug}-${i}/600/400`}
-                  alt={`${keywordName} project ${i} in Vadodara`}
+                  src={img.src}
+                  alt={`${img.title} - ${keywordName} Vadodara`}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <p className="font-bold">{keywordName} Project {i}</p>
+                    <p className="font-bold">{img.title}</p>
                     <p className="text-sm opacity-80">Vadodara, Gujarat</p>
                   </div>
                 </div>
@@ -179,52 +185,52 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
         </div>
       </section>
 
-      {/* Before & After Showcase */}
+      {/* Wedding Venue Showcase */}
       <section className="py-16 md:py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{keywordName} Transformations</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Venue Transformations by PrimeOne</h2>
           <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-            See the amazing {keywordName.toLowerCase()} results we've achieved for our clients
+            See how PrimeOne transforms venues for {keywordName.toLowerCase()} events
           </p>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${keyword.slug}-before-1/600/400`}
-                  alt={`Before ${keywordName}`}
+                  src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&h=400&fit=crop"
+                  alt="Wedding venue before PrimeOne"
                   className="w-full h-64 object-cover"
                   loading="lazy"
                 />
-                <span className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Before</span>
+                <span className="absolute top-4 left-4 bg-gray-500 text-white px-3 py-1 rounded-full text-sm font-bold">Plain Venue</span>
               </div>
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${keyword.slug}-after-1/600/400`}
-                  alt={`After ${keywordName}`}
+                  src="https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=600&h=400&fit=crop"
+                  alt="Wedding venue after PrimeOne decoration"
                   className="w-full h-64 object-cover"
                   loading="lazy"
                 />
-                <span className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">After</span>
+                <span className="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">PrimeOne Magic</span>
               </div>
             </div>
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${keyword.slug}-before-2/600/400`}
-                  alt={`Before ${keywordName} project`}
+                  src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=400&fit=crop"
+                  alt="Empty wedding hall"
                   className="w-full h-64 object-cover"
                   loading="lazy"
                 />
-                <span className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Before</span>
+                <span className="absolute top-4 left-4 bg-gray-500 text-white px-3 py-1 rounded-full text-sm font-bold">Empty Hall</span>
               </div>
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${keyword.slug}-after-2/600/400`}
-                  alt={`After ${keywordName} project`}
+                  src="https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=600&h=400&fit=crop"
+                  alt="Decorated wedding hall by PrimeOne"
                   className="w-full h-64 object-cover"
                   loading="lazy"
                 />
-                <span className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">After</span>
+                <span className="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">Grand Setup</span>
               </div>
             </div>
           </div>
@@ -237,15 +243,15 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
             <div>
               <img
-                src={`https://picsum.photos/seed/${business.slug}-${keyword.slug}-why/600/600`}
-                alt={`Why choose us for ${keywordName}`}
+                src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&h=600&fit=crop"
+                alt={`Why choose PrimeOne for ${keywordName}`}
                 className="w-full h-80 md:h-[500px] object-cover rounded-2xl shadow-xl"
                 loading="lazy"
               />
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                Why Choose Us for {keyword.title.replace(" in Vadodara", "").replace(" Vadodara", "")}?
+                Why Choose PrimeOne for {keyword.title.replace(" in Vadodara", "").replace(" Vadodara", "")}?
               </h2>
               <div className="space-y-4">
                 {content.whyChooseUs.map((reason, index) => (
@@ -280,7 +286,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
                 className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all"
               >
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-area-${index}/300/200`}
+                  src={`https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=300&h=200&fit=crop&q=80`}
                   alt={`${keywordName} in ${getAreaDisplayName(area)}`}
                   className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
@@ -310,37 +316,65 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
       {/* Full Gallery Section - 50 Images */}
       <BusinessGallerySection business={business} keyword={keyword} />
 
-      {/* Testimonials with Photos */}
+      {/* Testimonials */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">What Our Clients Say About {keywordName}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Happy Couples Love PrimeOne</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Real feedback from satisfied customers who used our {keywordName.toLowerCase()} services
+            Real testimonials from couples who trusted PrimeOne for {keywordName.toLowerCase()}
           </p>
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-gray-50 p-6 rounded-2xl shadow-lg">
-                <div className="flex items-center gap-4 mb-4">
-                  <img
-                    src={`https://i.pravatar.cc/100?img=${i + 20}`}
-                    alt={`Customer ${i}`}
-                    className="w-14 h-14 rounded-full object-cover"
-                  />
-                  <div>
-                    <p className="font-bold">Satisfied Client {i}</p>
-                    <p className="text-sm text-gray-500">Vadodara</p>
-                  </div>
+            <div className="bg-gray-50 p-6 rounded-2xl shadow-lg">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 font-bold text-xl">PM</div>
+                <div>
+                  <p className="font-bold">Priya & Karan Mehta</p>
+                  <p className="text-sm text-gray-500">Alkapuri, Vadodara</p>
                 </div>
-                <div className="flex gap-1 mb-3">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-gray-600">
-                  "Amazing {keywordName.toLowerCase()} service! The team was professional and delivered excellent results. Highly recommend!"
-                </p>
               </div>
-            ))}
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-gray-600">
+                "PrimeOne made our wedding absolutely magical! Every detail was perfect, from mandap to sangeet. Rajesh bhai and team are the best!"
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-2xl shadow-lg">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 font-bold text-xl">SD</div>
+                <div>
+                  <p className="font-bold">Sneha & Amit Desai</p>
+                  <p className="text-sm text-gray-500">Destination Wedding</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-gray-600">
+                "PrimeOne handled our destination wedding in Udaipur flawlessly. From vendor coordination to guest management — 10/10 experience!"
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-2xl shadow-lg">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold text-xl">RP</div>
+                <div>
+                  <p className="font-bold">Ritu & Harsh Patel</p>
+                  <p className="text-sm text-gray-500">Budget Wedding, Gotri</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-gray-600">
+                "Tight budget but PrimeOne made our wedding look incredible! Guests still talk about the decoration. Highly recommend!"
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -398,16 +432,16 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
       {/* Full Width CTA Banner */}
       <section className="relative py-20 overflow-hidden">
         <img
-          src={`https://picsum.photos/seed/${business.slug}-${keyword.slug}-cta/1920/600`}
-          alt={`${keywordName} CTA`}
+          src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=1920&h=600&fit=crop"
+          alt="PrimeOne Wedding Planners CTA"
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative container mx-auto px-4 text-center text-white">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">Get Expert {keywordName} Today!</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Ready for Your Dream Wedding?</h2>
           <p className="text-lg md:text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-            Transform your space with our professional {keywordName.toLowerCase()} services in Vadodara
+            Contact PrimeOne for expert {keywordName.toLowerCase()} services in Vadodara
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -471,20 +505,20 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
               >
                 <Phone className="w-8 h-8 mb-3" />
                 <p className="font-bold">Call Us</p>
-                <p className="opacity-90">+91 98765 43210</p>
+                <p className="opacity-90">+91 63535 83148</p>
               </a>
               <a
-                href="mailto:info@yourbusiness.com"
+                href="mailto:hello@primeoneweddings.in"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@yourbusiness.com</p>
+                <p className="opacity-90">hello@primeoneweddings.in</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />
                 <p className="font-bold">Visit Us</p>
-                <p className="opacity-90">Vadodara, Gujarat</p>
+                <p className="opacity-90">301, Shapath Hexa, Alkapuri, Vadodara</p>
               </div>
             </div>
             <a

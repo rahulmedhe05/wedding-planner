@@ -16,7 +16,7 @@ interface BusinessHeroSliderProps {
 
 // Demo images for each business type (using picsum.photos for demo)
 const businessImages: Record<string, string[]> = {
-  "interior-designers": [
+  "wedding-designers": [
     "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&h=1080&fit=crop",
     "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&h=1080&fit=crop",
     "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&h=1080&fit=crop",
@@ -57,9 +57,11 @@ const businessImages: Record<string, string[]> = {
     "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop",
   ],
   "wedding-planners": [
-    "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1920&h=1080&fit=crop",
+    "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=1920&h=1080&fit=crop",
+    "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=1920&h=1080&fit=crop",
+    "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=1920&h=1080&fit=crop",
+    "https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=1920&h=1080&fit=crop",
+    "https://images.unsplash.com/photo-1529636798458-92182e662485?w=1920&h=1080&fit=crop",
   ],
   "study-abroad": [
     "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&h=1080&fit=crop",
@@ -71,7 +73,7 @@ const businessImages: Record<string, string[]> = {
 export function BusinessHeroSlider({ business, area, heroTitle, heroSubtitle, keyword }: BusinessHeroSliderProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const areaName = getAreaDisplayName(area);
-  const images = businessImages[business.slug] || businessImages["interior-designers"];
+  const images = businessImages[business.slug] || businessImages["wedding-designers"];
   const gradientClass = business.colors.gradient;
 
   useEffect(() => {
@@ -138,7 +140,7 @@ export function BusinessHeroSlider({ business, area, heroTitle, heroSubtitle, ke
               <div className="flex flex-wrap gap-4 md:gap-6 pt-2">
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Users className="w-5 h-5" />
-                  <span className="text-sm font-medium">5000+ Customers</span>
+                  <span className="text-sm font-medium">2000+ Weddings</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Star className="w-5 h-5 text-yellow-400" />
@@ -146,7 +148,7 @@ export function BusinessHeroSlider({ business, area, heroTitle, heroSubtitle, ke
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Award className="w-5 h-5" />
-                  <span className="text-sm font-medium">15+ Years</span>
+                  <span className="text-sm font-medium">Since 2010</span>
                 </div>
               </div>
 

@@ -7,20 +7,20 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Phone, MapPin, Star, Users, Award, CheckCircle, Heart, ArrowRight, Images } from "lucide-react";
 
-// Wedding gallery images for keyword pages
+// Wedding gallery images for keyword pages - Indian wedding themed
 const keywordGalleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=600&fit=crop", title: "Bride & Groom" },
-  { id: 2, src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=600&fit=crop", title: "Wedding Reception" },
-  { id: 3, src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=600&fit=crop", title: "Wedding Ceremony" },
-  { id: 4, src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=600&h=600&fit=crop", title: "Bridal Portrait" },
-  { id: 5, src: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&h=600&fit=crop", title: "Wedding Decor" },
-  { id: 6, src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=600&fit=crop", title: "Wedding Venue" },
-  { id: 7, src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&h=600&fit=crop", title: "Couple Dance" },
-  { id: 8, src: "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600&h=600&fit=crop", title: "Wedding Rings" },
-  { id: 9, src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=600&fit=crop", title: "Wedding Bouquet" },
+  { id: 1, src: "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=600&h=600&fit=crop", title: "Indian Bride & Groom" },
+  { id: 2, src: "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=600&h=600&fit=crop", title: "Wedding Mandap" },
+  { id: 3, src: "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=600&h=600&fit=crop", title: "Mehndi Ceremony" },
+  { id: 4, src: "https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=600&h=600&fit=crop", title: "Indian Wedding Decor" },
+  { id: 5, src: "https://images.unsplash.com/photo-1585652757141-8837d676054c?w=600&h=600&fit=crop", title: "Haldi Ceremony" },
+  { id: 6, src: "https://images.unsplash.com/photo-1580824456624-eb60e546de5d?w=600&h=600&fit=crop", title: "Sangeet Night" },
+  { id: 7, src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=600&fit=crop", title: "Wedding Portrait" },
+  { id: 8, src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=600&fit=crop", title: "Wedding Venue" },
+  { id: 9, src: "https://images.unsplash.com/photo-1565784249160-1524451fc3f7?w=600&h=600&fit=crop", title: "Wedding Stage" },
   { id: 10, src: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=600&h=600&fit=crop", title: "Wedding Celebration" },
-  { id: 11, src: "https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=600&h=600&fit=crop", title: "Wedding Cake" },
-  { id: 12, src: "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=600&h=600&fit=crop", title: "Indian Wedding" },
+  { id: 11, src: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&h=600&fit=crop", title: "Wedding Hall" },
+  { id: 12, src: "https://images.unsplash.com/photo-1518049362265-d5b2a6467b22?w=600&h=600&fit=crop", title: "Palace Wedding" },
 ];
 
 // Generate static params for all keywords
@@ -80,8 +80,8 @@ export default async function KeywordPage({
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl">💒</span>
-              <span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span>
+              <img src="/icon.svg" alt="PrimeOne" className="w-8 h-8" />
+              <span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span>
             </Link>
             <div className="flex items-center gap-4">
               <a
@@ -102,44 +102,62 @@ export default async function KeywordPage({
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative min-h-[50vh] md:min-h-[60vh] text-white overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop)` }}
-        />
+      {/* Hero Section with Slider + Booking Form */}
+      <section className="relative min-h-[90vh] md:min-h-screen text-white overflow-hidden">
+        {/* Background Slider */}
+        {[
+          "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=1920&h=1080&fit=crop",
+          "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=1920&h=1080&fit=crop",
+          "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=1920&h=1080&fit=crop",
+          "https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=1920&h=1080&fit=crop",
+        ].map((img, idx) => (
+          <div key={idx} className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${img})`, opacity: 0.3 }} />
+        ))}
         <div className="absolute inset-0 bg-gradient-to-r from-pink-900/90 via-rose-800/80 to-pink-700/70" />
         
         <div className="container mx-auto px-4 relative z-10 py-16 md:py-24">
-          <div className="max-w-4xl mx-auto text-center">
-            <nav className="flex justify-center mb-6 text-sm">
-              <ol className="flex items-center gap-2 text-pink-200">
-                <li><Link href="/" className="hover:text-white">Home</Link></li>
-                <li>/</li>
-                <li className="text-white">{keyword.h1}</li>
-              </ol>
-            </nav>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              {keyword.h1}
-            </h1>
-            <p className="text-lg md:text-xl text-pink-100 mb-8 max-w-3xl mx-auto">
-              {keyword.metaDescription}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+916353583148"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-yellow-600 hover:to-orange-600 transition-all hover:scale-105 shadow-lg"
-              >
-                <Phone className="w-5 h-5" />
-                Call Now
-              </a>
-              <a
-                href="https://wa.me/916353583148"
-                className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full font-bold text-lg transition-all"
-              >
-                Get Free Quote
-              </a>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Left side - text */}
+            <div>
+              <nav className="flex mb-6 text-sm">
+                <ol className="flex items-center gap-2 text-pink-200">
+                  <li><Link href="/" className="hover:text-white">Home</Link></li>
+                  <li>/</li>
+                  <li className="text-white">{keyword.h1}</li>
+                </ol>
+              </nav>
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                {keyword.h1}
+              </h1>
+              <p className="text-lg md:text-xl text-pink-100 mb-8 max-w-3xl">
+                {keyword.metaDescription}
+              </p>
+              <div className="flex flex-wrap gap-4 mb-6">
+                <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+                  <Star className="w-5 h-5 text-yellow-400" />
+                  <span>4.9/5 Rating</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+                  <Users className="w-5 h-5" />
+                  <span>2000+ Weddings</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+                  <Award className="w-5 h-5" />
+                  <span>Since 2010</span>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 md:hidden">
+                <a href="tel:+916353583148" className="inline-flex items-center justify-center gap-2 bg-white text-pink-700 px-6 py-3 rounded-full font-bold">
+                  <Phone className="w-5 h-5" /> Call Now
+                </a>
+              </div>
+            </div>
+            
+            {/* Right side - Booking Form */}
+            <div className="bg-white text-gray-900 p-6 md:p-8 rounded-2xl shadow-2xl">
+              <h3 className="text-xl font-bold mb-1 text-center text-pink-700">Get Free Wedding Quote</h3>
+              <p className="text-sm text-gray-500 text-center mb-4">PrimeOne Wedding Planners</p>
+              <KeywordEnquiryForm keywordTitle={keyword.h1} source={`keyword-${slug}`} inline />
             </div>
           </div>
         </div>
@@ -150,7 +168,7 @@ export default async function KeywordPage({
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <p className="text-2xl md:text-3xl font-bold text-pink-600">500+</p>
+              <p className="text-2xl md:text-3xl font-bold text-pink-600">2000+</p>
               <p className="text-gray-600 text-sm">Weddings in Vadodara</p>
             </div>
             <div>
@@ -264,7 +282,36 @@ export default async function KeywordPage({
       </section>
 
       {/* Enquiry Form Section */}
-      <KeywordEnquiryForm keywordTitle={keyword.h1} />
+      <KeywordEnquiryForm keywordTitle={keyword.h1} source={`keyword-${slug}-bottom`} />
+
+      {/* Testimonials */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+            What Our Happy Couples Say About PrimeOne
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="bg-pink-50 rounded-xl p-6 border border-pink-100">
+              <div className="flex gap-1 mb-3">{[1,2,3,4,5].map(s=><Star key={s} className="w-4 h-4 fill-yellow-400 text-yellow-400"/>)}</div>
+              <p className="text-gray-600 italic text-sm mb-4">"PrimeOne made our wedding absolutely magical! Every detail was perfect, from mandap to sangeet."</p>
+              <p className="font-bold text-sm">Priya & Karan Mehta</p>
+              <p className="text-xs text-pink-600">Grand Wedding, Alkapuri</p>
+            </div>
+            <div className="bg-pink-50 rounded-xl p-6 border border-pink-100">
+              <div className="flex gap-1 mb-3">{[1,2,3,4,5].map(s=><Star key={s} className="w-4 h-4 fill-yellow-400 text-yellow-400"/>)}</div>
+              <p className="text-gray-600 italic text-sm mb-4">"Best decision we made was hiring PrimeOne. They handled our destination wedding flawlessly."</p>
+              <p className="font-bold text-sm">Sneha & Amit Desai</p>
+              <p className="text-xs text-pink-600">Destination Wedding, Udaipur</p>
+            </div>
+            <div className="bg-pink-50 rounded-xl p-6 border border-pink-100">
+              <div className="flex gap-1 mb-3">{[1,2,3,4,5].map(s=><Star key={s} className="w-4 h-4 fill-yellow-400 text-yellow-400"/>)}</div>
+              <p className="text-gray-600 italic text-sm mb-4">"Tight budget but PrimeOne made our wedding look like a million bucks! Guests still talk about it."</p>
+              <p className="font-bold text-sm">Ritu & Harsh Patel</p>
+              <p className="text-xs text-pink-600">Budget Wedding, Gotri</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Areas We Serve */}
       <section className="py-12 md:py-16 bg-gray-50">
@@ -313,7 +360,7 @@ export default async function KeywordPage({
             Ready to Plan Your Dream Wedding in Vadodara?
           </h2>
           <p className="text-pink-100 mb-8 max-w-xl mx-auto">
-            Contact us today for a free consultation and let our expert wedding planners in Vadodara create your perfect celebration!
+            Contact PrimeOne Wedding Planners today for a free consultation and let our expert team in Vadodara create your perfect celebration!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

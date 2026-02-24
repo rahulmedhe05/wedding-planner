@@ -21,7 +21,7 @@ const galleryItems = [
   { id: 16, type: "image", src: "/16.png", title: "Balcony Design" },
   { id: 17, type: "image", src: "/17.png", title: "Foyer Entrance" },
   { id: 18, type: "image", src: "/18.png", title: "TV Unit Design" },
-  { id: 19, type: "image", src: "/19.png", title: "Bathroom Interior" },
+  { id: 19, type: "image", src: "/19.png", title: "Wedding Setup" },
   { id: 20, type: "image", src: "/20.png", title: "Guest Bedroom" },
   { id: 21, type: "image", src: "/21.png", title: "False Ceiling" },
   { id: 22, type: "image", src: "/22.png", title: "Wall Paneling" },
@@ -78,7 +78,7 @@ export function GallerySection() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Gallery of Excellence</h2>
           <p className="text-lg text-muted-foreground leading-relaxed font-mono">
             {
-              "Explore our stunning collection of interior designs - from modern living rooms to luxurious bedrooms"
+              "Explore our stunning collection of wedding celebrations — from grand mandap setups to intimate ceremony designs"
             }
           </p>
         </div>

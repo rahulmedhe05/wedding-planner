@@ -18,34 +18,34 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Wedding Planner in Vadodara | Crafting Dream Weddings Since 2010",
+  title: "PrimeOne PrimeOne Wedding Planners | Crafting Dream Weddings Since 2010",
   description:
-    "Turn your wedding dreams into reality with Vadodara's most trusted planning team. From intimate ceremonies to grand celebrations, we've orchestrated 500+ magical weddings. Free consultation available.",
+    "Turn your wedding dreams into reality with PrimeOne PrimeOne Wedding Planners — the city's most trusted planning team. From intimate ceremonies to grand celebrations, we've orchestrated 500+ magical weddings. Free consultation available.",
   keywords:
-    "wedding planner Vadodara, destination wedding Gujarat, luxury wedding planning, Indian wedding coordinator",
-  authors: [{ name: "Wedding Planners Vadodara" }],
-  creator: "Wedding Planners Vadodara",
-  publisher: "Wedding Planners Vadodara",
+    "PrimeOne Wedding Planners, wedding planner Vadodara, destination wedding Gujarat, luxury wedding planning, Indian wedding coordinator",
+  authors: [{ name: "PrimeOne PrimeOne Wedding Planners" }],
+  creator: "PrimeOne PrimeOne Wedding Planners",
+  publisher: "PrimeOne PrimeOne Wedding Planners",
   formatDetection: {
     email: true,
     address: true,
     telephone: true,
   },
-  metadataBase: new URL("https://weddingplannersinvadodara.in"),
+  metadataBase: new URL("https://primeoneweddings.in"),
   alternates: {
-    canonical: "https://weddingplannersinvadodara.in",
+    canonical: "https://primeoneweddings.in",
   },
   openGraph: {
-    title: "Wedding Planner in Vadodara | 500+ Dream Weddings Crafted",
+    title: "PrimeOne PrimeOne Wedding Planners | 500+ Dream Weddings Crafted",
     description:
-      "Every love story deserves a perfect celebration. We bring 15 years of expertise, creativity, and heart to make your wedding unforgettable. Let's plan your special day together.",
-    url: "https://weddingplannersinvadodara.in",
-    siteName: "Wedding Planners Vadodara",
+      "Every love story deserves a perfect celebration. PrimeOne Wedding Planners brings 15 years of expertise, creativity, and heart to make your wedding unforgettable. Let's plan your special day together.",
+    url: "https://primeoneweddings.in",
+    siteName: "PrimeOne PrimeOne Wedding Planners",
     locale: "en_IN",
     type: "website",
     images: [
       {
-        url: "https://weddingplannersinvadodara.in/og-image.jpg",
+        url: "https://primeoneweddings.in/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Best Wedding Planner in Vadodara",
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Dream Wedding Awaits in Vadodara",
-    description: "From first consultation to final dance – we handle every detail so you can savor every moment. 15 years of creating magical celebrations.",
-    images: ["https://weddingplannersinvadodara.in/og-image.jpg"],
+    title: "PrimeOne PrimeOne Wedding Planners | Your Dream Wedding Awaits",
+    description: "From first consultation to final dance – PrimeOne Wedding Planners handles every detail so you can savor every moment. 15 years of creating magical celebrations.",
+    images: ["https://primeoneweddings.in/og-image.jpg"],
     creator: "@weddingplannersvadodara",
   },
   robots: {
@@ -106,16 +106,16 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://weddingplannersinvadodara.in/#business",
-        name: "Wedding Planners Vadodara",
-        image: "https://weddingplannersinvadodara.in/logo.png",
-        description: "Vadodara's trusted wedding planning team since 2010. We transform wedding dreams into reality with personalized service, creative vision, and meticulous attention to detail.",
-        url: "https://weddingplannersinvadodara.in",
+        "@id": "https://primeoneweddings.in/#business",
+        name: "PrimeOne PrimeOne Wedding Planners",
+        image: "https://primeoneweddings.in/logo.png",
+        description: "PrimeOne Wedding Planners — Vadodara's trusted wedding planning team since 2010. We transform wedding dreams into reality with personalized service, creative vision, and meticulous attention to detail.",
+        url: "https://primeoneweddings.in",
         telephone: "+916353583148",
-        email: "info@weddingplannersinvadodara.in",
+        email: "hello@primeoneweddings.in",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Alkapuri",
+          streetAddress: "301, Shapath Hexa, Near Gujarat High Court",
           addressLocality: "Vadodara",
           addressRegion: "Gujarat",
           postalCode: "390007",
@@ -157,19 +157,19 @@ export default function RootLayout({
       },
       {
         "@type": "Organization",
-        "@id": "https://weddingplannersinvadodara.in/#organization",
-        name: "Wedding Planners Vadodara",
-        url: "https://weddingplannersinvadodara.in",
+        "@id": "https://primeoneweddings.in/#organization",
+        name: "PrimeOne PrimeOne Wedding Planners",
+        url: "https://primeoneweddings.in",
         logo: {
           "@type": "ImageObject",
-          url: "https://weddingplannersinvadodara.in/logo.png",
+          url: "https://primeoneweddings.in/logo.png",
           width: "200",
           height: "200"
         },
         foundingDate: "2010",
         founder: {
           "@type": "Person",
-          name: "Wedding Planners Vadodara Team"
+          name: "Rajesh Patel"
         },
         contactPoint: {
           "@type": "ContactPoint",
@@ -195,10 +195,10 @@ export default function RootLayout({
       },
       {
         "@type": "Service",
-        "@id": "https://weddingplannersinvadodara.in/#service",
+        "@id": "https://primeoneweddings.in/#service",
         name: "Wedding Planning Services",
         provider: {
-          "@id": "https://weddingplannersinvadodara.in/#business"
+          "@id": "https://primeoneweddings.in/#business"
         },
         serviceType: "Wedding Planning",
         description: "Complete wedding planning services including venue selection, vendor management, decor, catering coordination, and day-of coordination.",
@@ -251,27 +251,27 @@ export default function RootLayout({
       },
       {
         "@type": "WebSite",
-        "@id": "https://weddingplannersinvadodara.in/#website",
-        url: "https://weddingplannersinvadodara.in",
-        name: "Wedding Planners Vadodara",
+        "@id": "https://primeoneweddings.in/#website",
+        url: "https://primeoneweddings.in",
+        name: "PrimeOne PrimeOne Wedding Planners",
         publisher: {
-          "@id": "https://weddingplannersinvadodara.in/#organization"
+          "@id": "https://primeoneweddings.in/#organization"
         },
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://weddingplannersinvadodara.in/?s={search_term_string}",
+          target: "https://primeoneweddings.in/?s={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://weddingplannersinvadodara.in/#breadcrumb",
+        "@id": "https://primeoneweddings.in/#breadcrumb",
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://weddingplannersinvadodara.in/"
+            item: "https://primeoneweddings.in/"
           }
         ]
       }

@@ -62,15 +62,15 @@ export function MegaFooter() {
               <Mail className="w-5 h-5 text-pink-400 mt-1 flex-shrink-0" />
               <div>
                 <h4 className="font-semibold">Email Us</h4>
-                <p className="text-gray-400">info@weddingplannersvadodara.com</p>
+                <p className="text-gray-400">hello@primeoneweddings.in</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-pink-400 mt-1 flex-shrink-0" />
               <div>
                 <h4 className="font-semibold">Visit Us</h4>
-                <p className="text-gray-400">Alkapuri, Vadodara - 390007</p>
-                <p className="text-gray-400">Gujarat, India</p>
+                <p className="text-gray-400">301, Shapath Hexa, Near Gujarat High Court</p>
+                <p className="text-gray-400">Alkapuri, Vadodara - 390007, Gujarat</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
@@ -103,7 +103,7 @@ export function MegaFooter() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
             <Heart className="w-5 h-5 text-pink-500" />
-            <span className="font-semibold">Wedding Planners Vadodara</span>
+            <span className="font-semibold">PrimeOne Wedding Planners Vadodara</span>
           </div>
           <div className="flex items-center gap-4">
             <a href="#" className="hover:text-blue-400 transition-colors">
@@ -120,7 +120,7 @@ export function MegaFooter() {
             </a>
           </div>
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Wedding Planners Vadodara. All Rights Reserved.
+            © {new Date().getFullYear()} PrimeOne Wedding Planners Vadodara. All Rights Reserved.
           </p>
         </div>
       </div>

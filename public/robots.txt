@@ -1,5 +1,5 @@
 # Wedding Planners Vadodara - Robots.txt
-# https://weddingplannersinvadodara.in
+# https://primeoneweddings.in
 
 User-agent: *
 Allow: /
@@ -28,7 +28,7 @@ Allow: /_next/static/css/
 Allow: /_next/static/js/
 
 # Sitemap location
-Sitemap: https://weddingplannersinvadodara.in/sitemap.xml
+Sitemap: https://primeoneweddings.in/sitemap.xml
 
 # Host directive for search engines
-Host: https://weddingplannersinvadodara.in
+Host: https://primeoneweddings.in

@@ -64,10 +64,10 @@ export const vadodaraAreas = [
 export const businesses: BusinessConfig[] = [
   {
     id: "wedding-planners",
-    name: "Wedding Planners",
+    name: "PrimeOne Wedding Planners",
     slug: "wedding-planners",
-    tagline: "Create Your Dream Wedding with Expert Planning",
-    description: "Professional wedding planning services in Vadodara",
+    tagline: "Crafting Dream Weddings Across Vadodara Since 2010",
+    description: "PrimeOne Wedding Planners – Vadodara's most trusted wedding planning company for luxury, destination & budget weddings",
     colors: {
       primary: "#BE185D", // Magenta
       secondary: "#F472B6", // Light Magenta

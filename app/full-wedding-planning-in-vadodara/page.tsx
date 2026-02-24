@@ -212,7 +212,7 @@ const relatedKeywords = [
 ];
 
 export const metadata: Metadata = {
-  title: "Full Wedding Planning in Vadodara | Complete End-to-End Services | 500+ Weddings",
+  title: "Full Wedding Planning in Vadodara | Complete End-to-End Services | 2000+ Weddings",
   description: "Comprehensive full wedding planning in Vadodara. Complete end-to-end planning from engagement to honeymoon. Total vendor management, design & execution included.",
   keywords: "full wedding planning vadodara, complete wedding planning vadodara, end to end wedding planning vadodara, total wedding planning services vadodara",
   openGraph: {
@@ -220,7 +220,7 @@ export const metadata: Metadata = {
     description: "Comprehensive full wedding planning in Vadodara. Hand over everything and enjoy your journey.",
     type: "website",
     locale: "en_IN",
-    url: "https://weddingplannersinvadodara.in/full-wedding-planning-in-vadodara/",
+    url: "https://primeoneweddings.in/full-wedding-planning-in-vadodara/",
     images: [
       {
         url: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=630&fit=crop",
@@ -236,7 +236,7 @@ export const metadata: Metadata = {
     description: "Complete end-to-end wedding planning. Everything handled for you.",
   },
   alternates: {
-    canonical: "https://weddingplannersinvadodara.in/full-wedding-planning-in-vadodara/",
+    canonical: "https://primeoneweddings.in/full-wedding-planning-in-vadodara/",
   },
 };
 
@@ -248,8 +248,8 @@ export default function FullWeddingPlanningInVadodaraPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl">💒</span>
-              <span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span>
+              <img src="/icon.svg" alt="PrimeOne" className="w-8 h-8" />
+              <span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span>
             </Link>
             <div className="flex items-center gap-4">
               <a
@@ -297,7 +297,7 @@ export default function FullWeddingPlanningInVadodaraPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Users className="w-5 h-5" />
-                  <span>500+ Weddings</span>
+                  <span>2000+ Weddings</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -351,7 +351,7 @@ export default function FullWeddingPlanningInVadodaraPage() {
             </div>
             <div className="flex flex-col items-center">
               <Users className="w-10 h-10 text-green-600 mb-2" />
-              <p className="font-bold text-2xl">500+</p>
+              <p className="font-bold text-2xl">2000+</p>
               <p className="text-gray-600 text-sm">Full Weddings</p>
             </div>
             <div className="flex flex-col items-center">
@@ -647,12 +647,12 @@ export default function FullWeddingPlanningInVadodaraPage() {
                 <p className="opacity-90">+91 63535 83148</p>
               </a>
               <a
-                href="mailto:info@weddingplannersinvadodara.in"
+                href="mailto:hello@primeoneweddings.in"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@weddingplannersinvadodara.in</p>
+                <p className="opacity-90">hello@primeoneweddings.in</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />

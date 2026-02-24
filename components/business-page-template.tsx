@@ -47,24 +47,24 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="flex flex-col items-center">
-              <Users className="w-10 h-10 text-blue-600 mb-2" />
-              <p className="font-bold text-2xl">5000+</p>
-              <p className="text-gray-600 text-sm">Happy Customers</p>
+              <Users className="w-10 h-10 text-pink-600 mb-2" />
+              <p className="font-bold text-2xl">2000+</p>
+              <p className="text-gray-600 text-sm">Weddings Planned</p>
             </div>
             <div className="flex flex-col items-center">
               <Star className="w-10 h-10 text-yellow-500 mb-2" />
               <p className="font-bold text-2xl">4.9/5</p>
-              <p className="text-gray-600 text-sm">Customer Rating</p>
+              <p className="text-gray-600 text-sm">Google Rating</p>
             </div>
             <div className="flex flex-col items-center">
               <Award className="w-10 h-10 text-green-600 mb-2" />
-              <p className="font-bold text-2xl">15+</p>
-              <p className="text-gray-600 text-sm">Years Experience</p>
+              <p className="font-bold text-2xl">Since 2010</p>
+              <p className="text-gray-600 text-sm">Years of Trust</p>
             </div>
             <div className="flex flex-col items-center">
               <Clock className="w-10 h-10 text-purple-600 mb-2" />
               <p className="font-bold text-2xl">24/7</p>
-              <p className="text-gray-600 text-sm">Support Available</p>
+              <p className="text-gray-600 text-sm">Wedding Support</p>
             </div>
           </div>
         </div>
@@ -73,16 +73,16 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
       {/* Full Width Image Banner */}
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src={`https://picsum.photos/seed/${business.slug}-banner-${area}/1920/600`}
-          alt={`${business.name} services in ${areaName}`}
+          src="https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=1920&h=600&fit=crop"
+          alt={`PrimeOne Wedding Planners services in ${areaName}`}
           className="w-full h-full object-cover"
           loading="lazy"
         />
         <div className={cn("absolute inset-0 bg-gradient-to-r opacity-80", gradientClass)} />
         <div className="absolute inset-0 flex items-center justify-center text-white text-center px-4">
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Premium {business.name}</h2>
-            <p className="text-lg md:text-xl opacity-90">Serving {areaName} with Excellence</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">PrimeOne {business.name}</h2>
+            <p className="text-lg md:text-xl opacity-90">Making {areaName} Weddings Unforgettable</p>
           </div>
         </div>
       </section>
@@ -101,8 +101,8 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
             </div>
             <div className="order-1 md:order-2">
               <img
-                src={`https://picsum.photos/seed/${business.slug}-about-${area}/600/500`}
-                alt={`About ${business.name} in ${areaName}`}
+                src="https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=600&h=500&fit=crop"
+                alt={`About PrimeOne Wedding Planners in ${areaName}`}
                 className="w-full h-80 md:h-96 object-cover rounded-2xl shadow-xl"
                 loading="lazy"
               />
@@ -138,28 +138,33 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
         </div>
       </section>
 
-      {/* Featured Projects Images */}
+      {/* Featured Wedding Projects */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             <ImageIcon className="inline-block w-8 h-8 mr-2" style={{ color: business.colors.primary }} />
-            Featured {business.name} Projects in {areaName}
+            Our Recent Weddings in {areaName}
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Take a look at some of our best {business.name.toLowerCase()} projects completed in {areaName}, Vadodara
+            A glimpse of the beautiful weddings PrimeOne has planned in {areaName}, Vadodara
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((i) => (
+            {[
+              { src: "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=600&h=400&fit=crop", title: "Grand Mandap Setup" },
+              { src: "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=600&h=400&fit=crop", title: "Mehndi Ceremony" },
+              { src: "https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&h=400&fit=crop", title: "Sangeet Night" },
+              { src: "https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=600&h=400&fit=crop", title: "Floral Decoration" },
+            ].map((img, i) => (
               <div key={i} className="relative group overflow-hidden rounded-xl shadow-lg">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-${area}-${i}/600/400`}
-                  alt={`${business.name} project ${i} in ${areaName}`}
+                  src={img.src}
+                  alt={`${img.title} in ${areaName}`}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <p className="font-bold">{business.name} Project {i}</p>
+                    <p className="font-bold">{img.title}</p>
                     <p className="text-sm opacity-80">{areaName}, Vadodara</p>
                   </div>
                 </div>
@@ -169,52 +174,52 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
         </div>
       </section>
 
-      {/* Before & After Showcase */}
+      {/* Wedding Venue Showcase */}
       <section className="py-16 md:py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Our Transformations</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Venue Transformations by PrimeOne</h2>
           <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-            See the amazing transformations we've achieved for our clients in {areaName}
+            See how we transform ordinary venues into magical wedding destinations in {areaName}
           </p>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-before-1/600/400`}
-                  alt={`Before ${business.name} transformation`}
+                  src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&h=400&fit=crop"
+                  alt="Wedding venue before decoration"
                   className="w-full h-64 object-cover"
                   loading="lazy"
                 />
-                <span className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Before</span>
+                <span className="absolute top-4 left-4 bg-gray-500 text-white px-3 py-1 rounded-full text-sm font-bold">Plain Venue</span>
               </div>
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-after-1/600/400`}
-                  alt={`After ${business.name} transformation`}
+                  src="https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=600&h=400&fit=crop"
+                  alt="Wedding venue after PrimeOne decoration"
                   className="w-full h-64 object-cover"
                   loading="lazy"
                 />
-                <span className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">After</span>
+                <span className="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">PrimeOne Magic</span>
               </div>
             </div>
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-before-2/600/400`}
-                  alt={`Before ${business.name} project`}
+                  src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=400&fit=crop"
+                  alt="Empty wedding hall"
                   className="w-full h-64 object-cover"
                   loading="lazy"
                 />
-                <span className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Before</span>
+                <span className="absolute top-4 left-4 bg-gray-500 text-white px-3 py-1 rounded-full text-sm font-bold">Empty Hall</span>
               </div>
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-after-2/600/400`}
-                  alt={`After ${business.name} project`}
+                  src="https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=600&h=400&fit=crop"
+                  alt="Decorated wedding hall by PrimeOne"
                   className="w-full h-64 object-cover"
                   loading="lazy"
                 />
-                <span className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">After</span>
+                <span className="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">Grand Setup</span>
               </div>
             </div>
           </div>
@@ -227,8 +232,8 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
             <div>
               <img
-                src={`https://picsum.photos/seed/${business.slug}-why-${area}/600/600`}
-                alt={`Why choose ${business.name} in ${areaName}`}
+                src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&h=600&fit=crop"
+                alt={`Why choose PrimeOne Wedding Planners in ${areaName}`}
                 className="w-full h-80 md:h-[500px] object-cover rounded-2xl shadow-xl"
                 loading="lazy"
               />
@@ -250,37 +255,65 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
         </div>
       </section>
 
-      {/* Testimonials with Photos */}
+      {/* Testimonials */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Happy Couples Love PrimeOne</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Real feedback from satisfied customers in {areaName}
+            Real testimonials from couples who trusted PrimeOne for their special day
           </p>
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white p-6 rounded-2xl shadow-lg">
-                <div className="flex items-center gap-4 mb-4">
-                  <img
-                    src={`https://i.pravatar.cc/100?img=${i + 10}`}
-                    alt={`Customer ${i}`}
-                    className="w-14 h-14 rounded-full object-cover"
-                  />
-                  <div>
-                    <p className="font-bold">Happy Customer {i}</p>
-                    <p className="text-sm text-gray-500">{areaName}, Vadodara</p>
-                  </div>
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 font-bold text-xl">PM</div>
+                <div>
+                  <p className="font-bold">Priya & Karan Mehta</p>
+                  <p className="text-sm text-gray-500">{areaName}, Vadodara</p>
                 </div>
-                <div className="flex gap-1 mb-3">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-gray-600">
-                  "Excellent {business.name.toLowerCase()} service! Professional team, great results. Highly recommend their services in {areaName}."
-                </p>
               </div>
-            ))}
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-gray-600">
+                "PrimeOne made our wedding absolutely magical! Every detail was handled perfectly — from the mandap decoration to the sangeet arrangements. Rajesh bhai and team are the best!"
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 font-bold text-xl">SD</div>
+                <div>
+                  <p className="font-bold">Sneha & Amit Desai</p>
+                  <p className="text-sm text-gray-500">Destination Wedding</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-gray-600">
+                "We wanted a destination wedding in Udaipur and PrimeOne handled everything seamlessly. From vendor coordination to guest management — 10/10 experience!"
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold text-xl">RP</div>
+                <div>
+                  <p className="font-bold">Ritu & Harsh Patel</p>
+                  <p className="text-sm text-gray-500">Budget Wedding, Gotri</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-gray-600">
+                "Tight budget but PrimeOne made our wedding look incredible! Guests still talk about the decoration. Highly recommend for budget-friendly weddings in Vadodara."
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -299,11 +332,16 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                {[1, 2, 3, 4].map((i) => (
+                {[
+                  "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=300&h=300&fit=crop",
+                  "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=300&h=300&fit=crop",
+                  "https://images.unsplash.com/photo-1529636798458-92182e662485?w=300&h=300&fit=crop",
+                  "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=300&h=300&fit=crop",
+                ].map((src, i) => (
                   <img
                     key={i}
-                    src={`https://picsum.photos/seed/${business.slug}-local-${area}-${i}/300/300`}
-                    alt={`${business.name} work in ${areaName} ${i}`}
+                    src={src}
+                    alt={`PrimeOne wedding work in ${areaName} ${i + 1}`}
                     className="w-full h-40 object-cover rounded-xl shadow-md hover:shadow-xl transition-shadow"
                     loading="lazy"
                   />
@@ -394,16 +432,16 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
       {/* Full Width CTA Banner */}
       <section className="relative py-20 overflow-hidden">
         <img
-          src={`https://picsum.photos/seed/${business.slug}-cta-${area}/1920/600`}
-          alt={`${business.name} CTA banner`}
+          src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=1920&h=600&fit=crop"
+          alt="PrimeOne Wedding Planners CTA"
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative container mx-auto px-4 text-center text-white">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">Ready to Transform Your Space?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Ready to Plan Your Dream Wedding?</h2>
           <p className="text-lg md:text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-            Get a free consultation for your {business.name.toLowerCase()} project in {areaName}
+            Contact PrimeOne Wedding Planners for a free consultation in {areaName}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -441,8 +479,8 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
                   className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all"
                 >
                   <img
-                    src={`https://picsum.photos/seed/${business.slug}-area-card-${index}/300/200`}
-                    alt={`${business.name} in ${getAreaDisplayName(otherArea)}`}
+                    src={`https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=300&h=200&fit=crop&q=80&crop=entropy&seed=${index}`}
+                    alt={`PrimeOne Wedding Planners in ${getAreaDisplayName(otherArea)}`}
                     className="w-full h-28 object-cover group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -486,20 +524,20 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
               >
                 <Phone className="w-8 h-8 mb-3" />
                 <p className="font-bold">Call Us</p>
-                <p className="opacity-90">+91 98765 43210</p>
+                <p className="opacity-90">+91 63535 83148</p>
               </a>
               <a
-                href="mailto:info@yourbusiness.com"
+                href="mailto:hello@primeoneweddings.in"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@yourbusiness.com</p>
+                <p className="opacity-90">hello@primeoneweddings.in</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />
                 <p className="font-bold">Visit Us</p>
-                <p className="opacity-90">{areaName}, Vadodara</p>
+                <p className="opacity-90">301, Shapath Hexa, Alkapuri, Vadodara</p>
               </div>
             </div>
             <a

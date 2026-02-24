@@ -45,11 +45,11 @@ const otherAreas = [
 
 export const metadata: Metadata = {
   title: `Best Wedding Planner in ${areaName}, Vadodara | Professional Wedding Planning Services`,
-  description: `Looking for the best wedding planner in ${areaName}, Vadodara? We offer complete wedding planning services including venue selection, decoration, catering, photography & more. 15+ years experience. Call now!`,
+  description: `Looking for the best wedding planner in ${areaName}, Vadodara? We offer complete wedding planning services including venue selection, decoration, catering, photography & more. Since 2010. Call now!`,
   keywords: `wedding planner ${areaName}, wedding planner in ${areaName} vadodara, best wedding planner ${areaName}, wedding planning services ${areaName}, destination wedding ${areaName}, wedding decorator ${areaName}, vadodara wedding planner`,
   openGraph: {
     title: `Best Wedding Planner in ${areaName}, Vadodara`,
-    description: `Professional wedding planning services in ${areaName}, Vadodara. Complete wedding solutions from venue selection to day-of coordination. 500+ happy couples.`,
+    description: `Professional wedding planning services in ${areaName}, Vadodara. Complete wedding solutions from venue selection to day-of coordination. 2000+ happy couples.`,
     type: "website",
     locale: "en_IN",
     images: [
@@ -64,10 +64,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `Best Wedding Planner in ${areaName}, Vadodara`,
-    description: `Professional wedding planning services in ${areaName}. 15+ years experience, 500+ happy couples.`,
+    description: `Professional wedding planning services in ${areaName}. Since 2010, 2000+ happy couples.`,
   },
   alternates: {
-    canonical: `https://weddingplannersinvadodara.in/${area}-vadodara/`,
+    canonical: `https://primeoneweddings.in/${area}-vadodara/`,
   },
 };
 
@@ -82,8 +82,8 @@ export default function SamaAreaPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl">💒</span>
-              <span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span>
+              <img src="/icon.svg" alt="PrimeOne" className="w-8 h-8" />
+              <span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span>
             </Link>
             <div className="flex items-center gap-4">
               <a
@@ -127,11 +127,11 @@ export default function SamaAreaPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Users className="w-5 h-5" />
-                  <span>500+ Weddings</span>
+                  <span>2000+ Weddings</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Award className="w-5 h-5" />
-                  <span>15+ Years</span>
+                  <span>Since 2010</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -171,7 +171,7 @@ export default function SamaAreaPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="flex flex-col items-center">
               <Users className="w-10 h-10 text-pink-600 mb-2" />
-              <p className="font-bold text-2xl">500+</p>
+              <p className="font-bold text-2xl">2000+</p>
               <p className="text-gray-600 text-sm">Happy Couples</p>
             </div>
             <div className="flex flex-col items-center">
@@ -516,12 +516,12 @@ export default function SamaAreaPage() {
                 <p className="opacity-90">+91 63535 83148</p>
               </a>
               <a
-                href="mailto:info@weddingplannersinvadodara.in"
+                href="mailto:hello@primeoneweddings.in"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@weddingplannersinvadodara.in</p>
+                <p className="opacity-90">hello@primeoneweddings.in</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />

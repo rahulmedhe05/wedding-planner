@@ -5,58 +5,58 @@ import { Check, Sparkles, Crown, Star } from "lucide-react"
 
 const packages = [
   {
-    name: "Basic Interior Makeover",
-    price: "Starting ₹99,999",
+    name: "Essential Wedding Package",
+    price: "Starting ₹1,50,000",
     icon: Star,
     popular: false,
     features: [
-      "Complete space assessment & evaluation",
-      "Color palette & layout suggestions",
-      "2D design plan",
-      "Furniture arrangement consultation",
-      "Perfect for single room renovation",
-      "3 weeks delivery timeline",
+      "Wedding day coordination & management",
+      "Venue selection assistance",
+      "Basic décor & mandap setup",
+      "Vendor coordination (caterer, DJ, photographer)",
+      "Guest seating arrangement",
+      "Perfect for intimate ceremonies (up to 200 guests)",
     ],
   },
   {
-    name: "Premium Home Design",
-    price: "Starting ₹3,99,999",
+    name: "Premium Wedding Package",
+    price: "Starting ₹5,00,000",
     icon: Sparkles,
     popular: true,
     features: [
-      "Full home design consultation",
-      "3D visualization of entire space",
-      "Custom furniture design options",
-      "Advanced lighting & ambiance planning",
-      "Premium material selections included",
-      "Project management & supervision",
-      "Complete on-site installation support",
-      "6-8 weeks professional execution",
+      "Complete wedding planning (3-5 functions)",
+      "Theme design & luxury décor",
+      "Bridal makeup & mehndi coordination",
+      "Photography & videography management",
+      "Catering, entertainment & DJ services",
+      "Guest management & hospitality",
+      "Invitation design & RSVP tracking",
+      "Dedicated wedding coordinator on all days",
     ],
   },
   {
-    name: "Luxury Commercial Design",
+    name: "Royal Destination Wedding",
     price: "Custom Quote",
     icon: Crown,
     popular: false,
     features: [
-      "Full commercial space transformation",
-      "Brand identity integration in design",
-      "Advanced 3D visualization & walk-through",
-      "Custom furniture & fixtures design",
-      "Professional lighting & ambiance design",
-      "Dedicated project manager assigned",
-      "Complete installation & supervision",
-      "Quality assurance & finishing touches",
-      "Post-project maintenance consultation",
-      "Customized timeline & execution",
+      "Full destination wedding planning",
+      "Venue scouting across India (palaces, resorts, beaches)",
+      "Travel & accommodation for guests",
+      "Multi-day event coordination (haldi to reception)",
+      "Premium décor, lighting & floral design",
+      "Celebrity entertainment & DJ setup",
+      "Professional photography & drone videography",
+      "Luxury bridal suite & groom prep coordination",
+      "Complete guest hospitality & welcome kits",
+      "Post-wedding celebration & bidaai management",
     ],
   },
 ]
 
 export function PackagesSection() {
   const handleWhatsAppInquiry = (packageName: string) => {
-    const message = `Hello! I'm interested in the ${packageName} interior design package. Please provide more details.`
+    const message = `Hello! I'm interested in the ${packageName} wedding planning package. Please provide more details.`
     const whatsappNumber = "916353583148"
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappURL, "_blank")
@@ -66,12 +66,12 @@ export function PackagesSection() {
     <section id="packages" className="py-12 md:py-32 bg-card">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
-          <p className="text-accent font-mono uppercase tracking-wider mb-2 md:mb-4 text-xs sm:text-sm">Interior Design Pricing</p>
+          <p className="text-accent font-mono uppercase tracking-wider mb-2 md:mb-4 text-xs sm:text-sm">Wedding Packages</p>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-foreground mb-4 md:mb-6 text-balance">
-            Professional Interior Design Packages in Vadodara
+            Wedding Planning Packages in Vadodara
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed font-mono">
-            {"Transparent pricing with no hidden costs. Comprehensive design packages with flexible timelines and complete project management. Award-winning interior design service in Vadodara for homes, offices & commercial spaces"}
+            {"Transparent pricing with no hidden costs. Choose from our carefully crafted wedding packages — from intimate ceremonies to grand destination celebrations. Every package includes a dedicated wedding coordinator."}
           </p>
         </div>
 

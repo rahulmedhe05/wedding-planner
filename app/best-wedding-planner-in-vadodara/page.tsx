@@ -22,7 +22,7 @@ import {
 // Unique content for this keyword page
 const pageContent = {
   heroTitle: "The Best Wedding Planner in Vadodara? Let Our Work Speak.",
-  heroSubtitle: "Everyone claims to be the best wedding planner in Vadodara. We'd rather show you 500+ couples who call us that — and mean it.",
+  heroSubtitle: "Everyone claims to be the best wedding planner in Vadodara. We'd rather show you 2000+ couples who call us that — and mean it.",
   
   mainContent: `
 Let's be honest — when you Google "best wedding planner in Vadodara," every result claims to be number one. So how do you actually find the best?
@@ -58,7 +58,7 @@ That's who we are. That's who we've always been.
       description: "We've seen it all — and learned from everything. The best wedding planner in Vadodara grows with every celebration."
     },
     {
-      title: "500+ Happy Couples",
+      title: "2000+ Happy Couples",
       description: "Not just completed weddings — genuinely happy couples who still tag us in anniversary posts years later."
     },
     {
@@ -156,7 +156,7 @@ That's who we are. That's who we've always been.
     },
     {
       question: "What makes you different from other wedding planners claiming to be the best?",
-      answer: "Experience (15+ years), track record (500+ weddings), and most importantly — passion. We still cry at weddings. We still get excited about details. The best wedding planner never loses that magic."
+      answer: "Experience (15+ years), track record (2000+ weddings), and most importantly — passion. We still cry at weddings. We still get excited about details. The best wedding planner never loses that magic."
     },
     {
       question: "Is the best wedding planner in Vadodara also the most expensive?",
@@ -207,15 +207,15 @@ const relatedKeywords = [
 ];
 
 export const metadata: Metadata = {
-  title: "Best Wedding Planner in Vadodara | #1 Rated | 500+ Happy Couples",
-  description: "Looking for the best wedding planner in Vadodara? 15+ years experience, 500+ weddings, 4.9★ rating. The best wedding planner creates magic. Let us prove it.",
+  title: "Best Wedding Planner in Vadodara | #1 Rated | 2000+ Happy Couples",
+  description: "Looking for the best wedding planner in Vadodara? Since 2010, 2000+ weddings, 4.9★ rating. The best wedding planner creates magic. Let us prove it.",
   keywords: "best wedding planner in vadodara, best wedding planner vadodara, top rated wedding planner vadodara, number one wedding planner vadodara",
   openGraph: {
     title: "Best Wedding Planner in Vadodara | Proven Excellence",
-    description: "Don't settle for less than the best wedding planner in Vadodara. 500+ couples trust us. 15+ years experience. Your dream wedding awaits.",
+    description: "Don't settle for less than the best wedding planner in Vadodara. 2000+ couples trust us. Since 2010. Your dream wedding awaits.",
     type: "website",
     locale: "en_IN",
-    url: "https://weddingplannersinvadodara.in/best-wedding-planner-in-vadodara/",
+    url: "https://primeoneweddings.in/best-wedding-planner-in-vadodara/",
     images: [
       {
         url: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=630&fit=crop",
@@ -228,10 +228,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Wedding Planner in Vadodara | #1 Choice",
-    description: "When only the best wedding planner in Vadodara will do. 500+ couples agree.",
+    description: "When only the best wedding planner in Vadodara will do. 2000+ couples agree.",
   },
   alternates: {
-    canonical: "https://weddingplannersinvadodara.in/best-wedding-planner-in-vadodara/",
+    canonical: "https://primeoneweddings.in/best-wedding-planner-in-vadodara/",
   },
 };
 
@@ -243,8 +243,8 @@ export default function BestWeddingPlannerInVadodaraPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl">💒</span>
-              <span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span>
+              <img src="/icon.svg" alt="PrimeOne" className="w-8 h-8" />
+              <span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span>
             </Link>
             <div className="flex items-center gap-4">
               <a
@@ -292,7 +292,7 @@ export default function BestWeddingPlannerInVadodaraPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Users className="w-5 h-5" />
-                  <span>500+ Couples</span>
+                  <span>2000+ Couples</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -346,7 +346,7 @@ export default function BestWeddingPlannerInVadodaraPage() {
             </div>
             <div className="flex flex-col items-center">
               <Users className="w-10 h-10 text-green-600 mb-2" />
-              <p className="font-bold text-2xl">500+</p>
+              <p className="font-bold text-2xl">2000+</p>
               <p className="text-gray-600 text-sm">Happy Couples</p>
             </div>
             <div className="flex flex-col items-center">
@@ -646,12 +646,12 @@ export default function BestWeddingPlannerInVadodaraPage() {
                 <p className="opacity-90">+91 63535 83148</p>
               </a>
               <a
-                href="mailto:info@weddingplannersinvadodara.in"
+                href="mailto:hello@primeoneweddings.in"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@weddingplannersinvadodara.in</p>
+                <p className="opacity-90">hello@primeoneweddings.in</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />

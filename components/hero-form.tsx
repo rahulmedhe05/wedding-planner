@@ -17,14 +17,14 @@ const formConfigs: Record<string, {
   subtitle: string;
   fields: { name: string; label: string; type: string; options?: string[]; required?: boolean }[];
 }> = {
-  "interior-designers": {
+  "wedding-designers": {
     title: "Get Free 3D Design",
-    subtitle: "Professional Interior Design Services",
+    subtitle: "Professional Wedding Planning Services",
     fields: [
       { name: "fullName", label: "Full Name", type: "text", required: true },
       { name: "mobile", label: "Mobile Number", type: "tel", required: true },
       { name: "propertyType", label: "Property Type", type: "select", options: ["Apartment", "Bungalow", "Villa", "Commercial"], required: true },
-      { name: "service", label: "Service Required", type: "select", options: ["Modular Kitchen", "Full Home Interior", "Bedroom Interior", "Living Room", "Office Interior", "Renovation"], required: true },
+      { name: "service", label: "Service Required", type: "select", options: ["Full Wedding Planning", "Décor & Theme Design", "Venue Selection", "Day-of Coordination", "Destination Wedding", "Budget Planning"], required: true },
     ],
   },
   "real-estate": {
@@ -100,7 +100,7 @@ const formConfigs: Record<string, {
   },
   "wedding-planners": {
     title: "Plan Your Dream Wedding",
-    subtitle: "Complete Wedding Solutions",
+    subtitle: "PrimeOne Wedding Planners – Trusted Since 2010",
     fields: [
       { name: "fullName", label: "Full Name", type: "text", required: true },
       { name: "mobile", label: "Mobile Number", type: "tel", required: true },
@@ -122,7 +122,7 @@ const formConfigs: Record<string, {
 
 // Business-specific emojis and WhatsApp numbers
 const businessMeta: Record<string, { emoji: string; phone: string; domain: string }> = {
-  "interior-designers": { emoji: "🏠", phone: "916353583148", domain: "interiordesignvadodara.in" },
+  "wedding-designers": { emoji: "🏠", phone: "916353583148", domain: "weddingdesignvadodara.in" },
   "real-estate": { emoji: "🏢", phone: "916353583148", domain: "vadodarahomes.in" },
   "solar-installation": { emoji: "☀️", phone: "916353583148", domain: "vadodarasolar.in" },
   "skin-hair": { emoji: "💆", phone: "916353583148", domain: "skinclinicvadodara.in" },
@@ -130,13 +130,13 @@ const businessMeta: Record<string, { emoji: string; phone: string; domain: strin
   "dentists": { emoji: "🦷", phone: "916353583148", domain: "dentistvadodara.in" },
   "home-automation": { emoji: "🏠", phone: "916353583148", domain: "smarthomevadodara.in" },
   "security-cctv": { emoji: "📹", phone: "916353583148", domain: "cctvvadodara.in" },
-  "wedding-planners": { emoji: "💒", phone: "916353583148", domain: "weddingvadodara.in" },
+  "wedding-planners": { emoji: "💒", phone: "916353583148", domain: "primeoneweddings.in" },
   "study-abroad": { emoji: "🎓", phone: "916353583148", domain: "studyabroadvadodara.in" },
 };
 
 export function HeroForm({ business, area, keyword }: HeroFormProps) {
-  const config = formConfigs[business.slug] || formConfigs["interior-designers"];
-  const meta = businessMeta[business.slug] || businessMeta["interior-designers"];
+  const config = formConfigs[business.slug] || formConfigs["wedding-designers"];
+  const meta = businessMeta[business.slug] || businessMeta["wedding-designers"];
   const areaName = getAreaDisplayName(area);
 
   const [formData, setFormData] = useState<Record<string, string>>({});

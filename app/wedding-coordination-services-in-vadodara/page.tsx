@@ -229,7 +229,7 @@ export const metadata: Metadata = {
     description: "Wedding coordination services in Vadodara. Professional day-of coordination for stress-free celebrations.",
     type: "website",
     locale: "en_IN",
-    url: "https://weddingplannersinvadodara.in/wedding-coordination-services-in-vadodara/",
+    url: "https://primeoneweddings.in/wedding-coordination-services-in-vadodara/",
     images: [
       {
         url: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=630&fit=crop",
@@ -245,7 +245,7 @@ export const metadata: Metadata = {
     description: "Professional coordination for your planned wedding. Flawless execution guaranteed.",
   },
   alternates: {
-    canonical: "https://weddingplannersinvadodara.in/wedding-coordination-services-in-vadodara/",
+    canonical: "https://primeoneweddings.in/wedding-coordination-services-in-vadodara/",
   },
 };
 
@@ -257,8 +257,8 @@ export default function WeddingCoordinationServicesVadodaraPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl">💒</span>
-              <span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span>
+              <img src="/icon.svg" alt="PrimeOne" className="w-8 h-8" />
+              <span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span>
             </Link>
             <div className="flex items-center gap-4">
               <a
@@ -661,12 +661,12 @@ export default function WeddingCoordinationServicesVadodaraPage() {
                 <p className="opacity-90">+91 63535 83148</p>
               </a>
               <a
-                href="mailto:info@weddingplannersinvadodara.in"
+                href="mailto:hello@primeoneweddings.in"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@weddingplannersinvadodara.in</p>
+                <p className="opacity-90">hello@primeoneweddings.in</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />

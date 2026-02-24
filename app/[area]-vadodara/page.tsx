@@ -21,20 +21,20 @@ import {
   Mail,
 } from "lucide-react";
 
-// Wedding gallery images
+// Wedding gallery images - Indian wedding themed
 const areaGalleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=600&fit=crop", title: "Bride & Groom" },
-  { id: 2, src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=600&fit=crop", title: "Wedding Reception" },
-  { id: 3, src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=600&fit=crop", title: "Wedding Ceremony" },
-  { id: 4, src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=600&h=600&fit=crop", title: "Bridal Portrait" },
-  { id: 5, src: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&h=600&fit=crop", title: "Wedding Decor" },
-  { id: 6, src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=600&fit=crop", title: "Wedding Venue" },
-  { id: 7, src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&h=600&fit=crop", title: "Couple Dance" },
-  { id: 8, src: "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600&h=600&fit=crop", title: "Wedding Rings" },
-  { id: 9, src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=600&fit=crop", title: "Wedding Bouquet" },
-  { id: 10, src: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=600&h=600&fit=crop", title: "Wedding Celebration" },
-  { id: 11, src: "https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=600&h=600&fit=crop", title: "Wedding Cake" },
-  { id: 12, src: "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=600&h=600&fit=crop", title: "Indian Wedding" },
+  { id: 1, src: "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=600&h=600&fit=crop", title: "Indian Bride & Groom" },
+  { id: 2, src: "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=600&h=600&fit=crop", title: "Wedding Mandap" },
+  { id: 3, src: "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=600&h=600&fit=crop", title: "Mehndi Ceremony" },
+  { id: 4, src: "https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=600&h=600&fit=crop", title: "Indian Wedding Decor" },
+  { id: 5, src: "https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&h=600&fit=crop", title: "Sangeet Night" },
+  { id: 6, src: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&h=600&fit=crop", title: "Venue Decoration" },
+  { id: 7, src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=600&h=600&fit=crop", title: "Bridal Portrait" },
+  { id: 8, src: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&h=600&fit=crop", title: "Haldi Ceremony" },
+  { id: 9, src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=600&fit=crop", title: "Floral Arrangement" },
+  { id: 10, src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=600&fit=crop", title: "Grand Wedding Hall" },
+  { id: 11, src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=600&fit=crop", title: "Reception Setup" },
+  { id: 12, src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=600&fit=crop", title: "Wedding Celebration" },
 ];
 
 // Generate static params for all areas
@@ -70,17 +70,17 @@ export async function generateMetadata({
   const areaName = getAreaDisplayName(area);
   
   return {
-    title: `Best Wedding Planner in ${areaName}, Vadodara | Professional Wedding Planning Services`,
-    description: `Looking for the best wedding planner in ${areaName}, Vadodara? We offer complete wedding planning services including venue selection, decoration, catering, photography & more. 15+ years experience. Call now!`,
+    title: `Best Wedding Planner in ${areaName}, Vadodara | PrimeOne Wedding Planners`,
+    description: `PrimeOne Wedding Planners – #1 wedding planner in ${areaName}, Vadodara. Complete wedding planning services including venue selection, decoration, catering, photography & more. Since 2010. Call +91 63535 83148!`,
     keywords: `wedding planner ${areaName}, wedding planner in ${areaName} vadodara, best wedding planner ${areaName}, wedding planning services ${areaName}, destination wedding ${areaName}, wedding decorator ${areaName}, vadodara wedding planner`,
     openGraph: {
-      title: `Best Wedding Planner in ${areaName}, Vadodara`,
-      description: `Professional wedding planning services in ${areaName}, Vadodara. Complete wedding solutions from venue selection to day-of coordination. 500+ happy couples.`,
+      title: `Best Wedding Planner in ${areaName}, Vadodara | PrimeOne`,
+      description: `PrimeOne Wedding Planners – Professional wedding planning services in ${areaName}, Vadodara. Complete wedding solutions from venue selection to day-of coordination. 2000+ happy couples.`,
       type: "website",
       locale: "en_IN",
       images: [
         {
-          url: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=630&fit=crop",
+          url: "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=1200&h=630&fit=crop",
           width: 1200,
           height: 630,
           alt: `Wedding Planner in ${areaName}, Vadodara`,
@@ -89,11 +89,11 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `Best Wedding Planner in ${areaName}, Vadodara`,
-      description: `Professional wedding planning services in ${areaName}. 15+ years experience, 500+ happy couples.`,
+      title: `Best Wedding Planner in ${areaName}, Vadodara | PrimeOne`,
+      description: `PrimeOne Wedding Planners in ${areaName}. Since 2010, 2000+ happy couples.`,
     },
     alternates: {
-      canonical: `https://weddingplannersinvadodara.in/${area}-vadodara/`,
+      canonical: `https://primeoneweddings.in/${area}-vadodara/`,
     },
   };
 }
@@ -132,8 +132,8 @@ export default async function AreaPage({
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl">💒</span>
-              <span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span>
+              <img src="/icon.svg" alt="PrimeOne Wedding Planners" className="w-8 h-8 sm:w-9 sm:h-9" />
+              <span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span>
             </Link>
             <div className="flex items-center gap-4">
               <a
@@ -154,12 +154,37 @@ export default async function AreaPage({
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-pink-700 via-rose-600 to-pink-800 text-white py-16 md:py-24">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1920')] bg-cover bg-center opacity-20" />
-        <div className="container mx-auto px-4 relative z-10">
+      {/* Hero Section with Slider */}
+      <section className="relative min-h-[90vh] overflow-hidden">
+        {/* Background Slider Images */}
+        {[
+          "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=1920&h=1080&fit=crop",
+          "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=1920&h=1080&fit=crop",
+          "https://images.unsplash.com/photo-1600428877878-1a0ff561571c?w=1920&h=1080&fit=crop",
+          "https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=1920&h=1080&fit=crop",
+        ].map((img, i) => (
+          <div
+            key={i}
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              opacity: i === 0 ? 1 : 0.3,
+              zIndex: i === 0 ? 1 : 0,
+            }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-900/50 to-rose-800/30 z-10" />
+        
+        <div className="relative z-20 container mx-auto px-4 py-16 md:py-24">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
+            <div className="text-white">
+              <div className="flex items-center gap-2 mb-4">
+                <Sparkles className="w-5 h-5 text-yellow-400" />
+                <span className="text-pink-200 text-sm uppercase tracking-wider font-medium">PrimeOne Wedding Planners</span>
+              </div>
               <div className="flex items-center gap-2 mb-4">
                 <MapPin className="w-5 h-5" />
                 <span className="text-pink-200">Serving {areaName}, Vadodara</span>
@@ -177,11 +202,11 @@ export default async function AreaPage({
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Users className="w-5 h-5" />
-                  <span>500+ Weddings</span>
+                  <span>2000+ Weddings</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Award className="w-5 h-5" />
-                  <span>15+ Years</span>
+                  <span>Since 2010</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -201,13 +226,14 @@ export default async function AreaPage({
               </div>
             </div>
             
-            {/* Enquiry Form */}
+            {/* Booking Form */}
             <div className="bg-white text-gray-900 p-6 md:p-8 rounded-2xl shadow-2xl">
-              <h3 className="text-xl font-bold mb-4 text-center text-pink-700">
+              <h3 className="text-xl font-bold mb-1 text-center text-pink-700">
                 Get Free Wedding Planning Quote
               </h3>
+              <p className="text-sm text-gray-500 text-center mb-4">PrimeOne Wedding Planners</p>
               <KeywordEnquiryForm 
-                keyword={`Wedding Planner in ${areaName}`} 
+                keywordTitle={`Wedding Planner in ${areaName}`} 
                 source={`area-page-${area}`}
               />
             </div>
@@ -221,18 +247,18 @@ export default async function AreaPage({
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="flex flex-col items-center">
               <Users className="w-10 h-10 text-pink-600 mb-2" />
-              <p className="font-bold text-2xl">500+</p>
+              <p className="font-bold text-2xl">2000+</p>
               <p className="text-gray-600 text-sm">Happy Couples</p>
             </div>
             <div className="flex flex-col items-center">
               <Star className="w-10 h-10 text-yellow-500 mb-2" />
               <p className="font-bold text-2xl">4.9/5</p>
-              <p className="text-gray-600 text-sm">Customer Rating</p>
+              <p className="text-gray-600 text-sm">Google Rating</p>
             </div>
             <div className="flex flex-col items-center">
               <Award className="w-10 h-10 text-green-600 mb-2" />
-              <p className="font-bold text-2xl">15+</p>
-              <p className="text-gray-600 text-sm">Years Experience</p>
+              <p className="font-bold text-2xl">Since 2010</p>
+              <p className="text-gray-600 text-sm">Years of Trust</p>
             </div>
             <div className="flex flex-col items-center">
               <Heart className="w-10 h-10 text-red-500 mb-2" />
@@ -372,15 +398,15 @@ export default async function AreaPage({
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=500&fit=crop"
-                alt={`Why choose our wedding planner in ${areaName}`}
+                src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&h=500&fit=crop"
+                alt={`Why choose PrimeOne Wedding Planners in ${areaName}`}
                 className="w-full h-80 md:h-[450px] object-cover rounded-2xl shadow-xl"
                 loading="lazy"
               />
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
-                Why Choose Us for Your Wedding in {areaName}?
+                Why Choose PrimeOne for Your Wedding in {areaName}?
               </h2>
               <div className="space-y-4">
                 {content.whyChooseUs.map((reason, index) => (
@@ -429,10 +455,10 @@ export default async function AreaPage({
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-              What Our Couples Say
+              What Happy Couples Say About PrimeOne
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Real stories from couples who trusted us with their special day
+              Real stories from couples who trusted PrimeOne for their special day
             </p>
           </div>
           
@@ -440,11 +466,9 @@ export default async function AreaPage({
             {content.testimonials.map((testimonial, index) => (
               <div key={index} className="bg-white p-6 rounded-2xl shadow-lg border border-pink-100">
                 <div className="flex items-center gap-4 mb-4">
-                  <img
-                    src={`https://i.pravatar.cc/100?img=${index + 20}`}
-                    alt={testimonial.name}
-                    className="w-14 h-14 rounded-full object-cover border-2 border-pink-200"
-                  />
+                  <div className="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 font-bold text-xl">
+                    {testimonial.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                  </div>
                   <div>
                     <p className="font-bold text-gray-900">{testimonial.name}</p>
                     <p className="text-sm text-pink-600">{testimonial.event}</p>
@@ -490,8 +514,8 @@ export default async function AreaPage({
       {/* CTA Banner */}
       <section className="relative py-20 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=600&fit=crop"
-          alt="Wedding Planner CTA"
+          src="https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=1920&h=600&fit=crop"
+          alt="PrimeOne Wedding Planners CTA"
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
@@ -568,17 +592,17 @@ export default async function AreaPage({
                 <p className="opacity-90">+91 63535 83148</p>
               </a>
               <a
-                href="mailto:info@weddingplannersinvadodara.in"
+                href="mailto:hello@primeoneweddings.in"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@weddingplannersinvadodara.in</p>
+                <p className="opacity-90">hello@primeoneweddings.in</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />
-                <p className="font-bold">Location</p>
-                <p className="opacity-90">{areaName}, Vadodara, Gujarat</p>
+                <p className="font-bold">Visit Us</p>
+                <p className="opacity-90">301, Shapath Hexa, Alkapuri, Vadodara</p>
               </div>
             </div>
             <a

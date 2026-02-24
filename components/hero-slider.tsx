@@ -10,23 +10,23 @@ import { addLead } from "@/lib/leads"
 const slides = [
   {
     id: 1,
-    title: "Crafting Dream Interiors",
-    subtitle: "Bangalore's Trusted Interior Designers",
-    description: "Transforming homes, offices, and commercial spaces across Bangalore with stunning interior designs",
+    title: "Crafting Dream Weddings",
+    subtitle: "Vadodara's Most Trusted Wedding Planners",
+    description: "Planning unforgettable weddings across Vadodara — from intimate ceremonies to grand celebrations since 2010",
     image: "/Slider1.png",
   },
   {
     id: 2,
-    title: "Elegant Living Spaces",
-    subtitle: "Where Style Meets Comfort",
-    description: "Contemporary interior design blending functionality with aesthetic excellence for Bangalore homes",
+    title: "Elegant Wedding Celebrations",
+    subtitle: "Where Tradition Meets Modern Style",
+    description: "Beautiful Indian wedding planning that blends cultural traditions with contemporary elegance",
     image: "/Slider2.png",
   },
   {
     id: 3,
-    title: "End-to-End Design Solutions",
+    title: "End-to-End Wedding Planning",
     subtitle: "Your Vision, Our Expertise",
-    description: "Complete interior solutions from concept development to flawless execution in Bangalore",
+    description: "Complete wedding solutions from venue selection to day-of coordination — flawlessly executed in Vadodara",
     image: "/Slider3.png",
   },
 ]
@@ -36,9 +36,10 @@ export function HeroSlider() {
   const [formData, setFormData] = useState({
     fullName: "",
     phoneNumber: "",
-    propertyType: "",
+    eventType: "",
+    weddingDate: "",
+    guestCount: "",
     budget: "",
-    city: "",
   })
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -48,25 +49,26 @@ export function HeroSlider() {
     addLead({
       fullName: formData.fullName,
       phoneNumber: formData.phoneNumber,
-      propertyType: formData.propertyType,
+      propertyType: formData.eventType,
       budget: formData.budget,
-      city: formData.city,
+      city: formData.guestCount,
     })
 
     const message = `
-✨ *INTERIOR DESIGN ENQUIRY* ✨
+💒 *WEDDING PLANNING ENQUIRY* 💒
 
 • *Full Name:* ${formData.fullName}
 • *Phone Number:* ${formData.phoneNumber}
-• *Property Type:* ${formData.propertyType}
-• *City:* ${formData.city}
+• *Event Type:* ${formData.eventType}
+• *Wedding Date:* ${formData.weddingDate || 'Not decided yet'}
+• *Guest Count:* ${formData.guestCount || 'Not specified'}
 • *Budget:* ${formData.budget || 'Not specified'}
 
 ―――――――――――――
-_Sent via Nesture Interiors Website_
+_Sent via PrimeOne Wedding Planners Website_
     `.trim()
 
-    const whatsappNumber = "918618080171"
+    const whatsappNumber = "916353583148"
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappURL, "_blank")
   }
@@ -124,9 +126,9 @@ _Sent via Nesture Interiors Website_
                   <div className="mb-2 md:mb-3 pb-2 md:pb-3 border-b border-border">
                     <p className="text-xs text-accent font-mono uppercase tracking-wider mb-1">Quick Response</p>
                     <h3 className="text-xs sm:text-sm md:text-base font-bold text-card-foreground">
-                      Professional Interior Design Services
+                      Plan Your Dream Wedding
                       <br />
-                      <em className="text-xs not-italic">— Free Consultation & 3D Visualization</em>
+                      <em className="text-xs not-italic">— Free Consultation by PrimeOne</em>
                     </h3>
                   </div>
                   <form onSubmit={handleSubmit} className="space-y-2">
@@ -161,38 +163,35 @@ _Sent via Nesture Interiors Website_
                     </div>
 
                     <div>
-                      <label htmlFor="propertyType" className="block text-xs font-mono text-card-foreground mb-1">
-                        3. Property Type <span className="text-destructive">*</span>
+                      <label htmlFor="eventType" className="block text-xs font-mono text-card-foreground mb-1">
+                        3. Event Type <span className="text-destructive">*</span>
                       </label>
                       <select
-                        id="propertyType"
-                        value={formData.propertyType}
-                        onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
+                        id="eventType"
+                        value={formData.eventType}
+                        onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
                         required
                         className="w-full bg-background border border-border text-foreground rounded-md px-2 py-1 text-xs h-8"
                       >
-                        <option value="">Select Property Type</option>
-                        <option value="1BHK">1BHK</option>
-                        <option value="2BHK">2BHK</option>
-                        <option value="3BHK">3BHK</option>
-                        <option value="Villa">Villa</option>
-                        <option value="Bungalow">Bungalow</option>
-                        <option value="Commercial">Commercial</option>
-                        <option value="Office">Office</option>
+                        <option value="">Select Event Type</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Engagement">Engagement</option>
+                        <option value="Haldi & Mehndi">Haldi & Mehndi</option>
+                        <option value="Sangeet & Reception">Sangeet & Reception</option>
+                        <option value="Destination Wedding">Destination Wedding</option>
+                        <option value="Complete Wedding Package">Complete Wedding Package</option>
                       </select>
                     </div>
 
                     <div>
-                      <label htmlFor="city" className="block text-xs font-mono text-card-foreground mb-1">
-                        4. City <span className="text-destructive">*</span>
+                      <label htmlFor="weddingDate" className="block text-xs font-mono text-card-foreground mb-1">
+                        4. Wedding Date
                       </label>
                       <Input
-                        id="city"
-                        type="text"
-                        placeholder="Enter your city"
-                        value={formData.city}
-                        onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                        required
+                        id="weddingDate"
+                        type="date"
+                        value={formData.weddingDate}
+                        onChange={(e) => setFormData({ ...formData, weddingDate: e.target.value })}
                         className="bg-background border-border text-foreground text-xs h-8"
                       />
                     </div>

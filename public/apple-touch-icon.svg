@@ -10,8 +10,6 @@
     </linearGradient>
   </defs>
   <rect width="180" height="180" rx="40" fill="url(#grad)"/>
-  <ellipse cx="70" cy="105" rx="28" ry="28" fill="none" stroke="url(#gold)" stroke-width="8"/>
-  <ellipse cx="110" cy="105" rx="28" ry="28" fill="none" stroke="url(#gold)" stroke-width="8"/>
-  <path d="M90 55 C90 55 80 38 68 38 C52 38 45 52 45 62 C45 80 90 105 90 105 C90 105 135 80 135 62 C135 52 128 38 112 38 C100 38 90 55 90 55Z" fill="white" opacity="0.95"/>
-  <polygon points="90,70 98,85 90,92 82,85" fill="#fef3c7"/>
+  <text x="90" y="120" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="90" fill="white">PO</text>
+  <path d="M90 25 C90 25 80 15 70 15 C58 15 52 25 52 32 C52 42 90 55 90 55 C90 55 128 42 128 32 C128 25 122 15 110 15 C100 15 90 25 90 25Z" fill="url(#gold)" opacity="0.9"/>
 </svg>

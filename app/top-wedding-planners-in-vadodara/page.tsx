@@ -29,7 +29,7 @@ How do you become one of the top wedding planners in Vadodara? It's not overnigh
 
 **The journey to becoming top wedding planners in Vadodara:**
 
-Every wedding teaches you something. After 500+ weddings in 15 years, we've learned more than any textbook could teach. We've learned that the best decoration means nothing if the bride is stressed. That perfect timing matters more than perfect venues. That small gestures — a favorite flower, a childhood song — create memories that last forever.
+Every wedding teaches you something. After 2000+ weddings in 15 years, we've learned more than any textbook could teach. We've learned that the best decoration means nothing if the bride is stressed. That perfect timing matters more than perfect venues. That small gestures — a favorite flower, a childhood song — create memories that last forever.
 
 The top wedding planners in Vadodara didn't just plan weddings. We absorbed every lesson. Every challenge made us stronger. Every happy couple made us more passionate.
 
@@ -154,7 +154,7 @@ We didn't become top wedding planners by being ordinary. We won't start now. You
   faqs: [
     {
       question: "What makes you one of the top wedding planners in Vadodara?",
-      answer: "15+ years experience, 500+ weddings, 4.9★ rating, venue partnerships, industry recognition, and most importantly — the trust of hundreds of families who recommend us to others."
+      answer: "Since 2010, 2000+ weddings, 4.9★ rating, venue partnerships, industry recognition, and most importantly — the trust of hundreds of families who recommend us to others."
     },
     {
       question: "Are the top wedding planners in Vadodara more expensive?",
@@ -214,10 +214,10 @@ export const metadata: Metadata = {
   keywords: "top wedding planners in vadodara, top wedding planners vadodara, best rated wedding planners vadodara, leading wedding planners vadodara",
   openGraph: {
     title: "Top Wedding Planners in Vadodara | Elite Wedding Services",
-    description: "Trust the top wedding planners in Vadodara for your celebration. 15+ years, 500+ weddings, and a reputation built on excellence.",
+    description: "Trust the top wedding planners in Vadodara for your celebration. 15+ years, 2000+ weddings, and a reputation built on excellence.",
     type: "website",
     locale: "en_IN",
-    url: "https://weddingplannersinvadodara.in/top-wedding-planners-in-vadodara/",
+    url: "https://primeoneweddings.in/top-wedding-planners-in-vadodara/",
     images: [
       {
         url: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=630&fit=crop",
@@ -233,7 +233,7 @@ export const metadata: Metadata = {
     description: "The top wedding planners in Vadodara trusted by hundreds of families.",
   },
   alternates: {
-    canonical: "https://weddingplannersinvadodara.in/top-wedding-planners-in-vadodara/",
+    canonical: "https://primeoneweddings.in/top-wedding-planners-in-vadodara/",
   },
 };
 
@@ -245,8 +245,8 @@ export default function TopWeddingPlannersInVadodaraPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl">💒</span>
-              <span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span>
+              <img src="/icon.svg" alt="PrimeOne" className="w-8 h-8" />
+              <span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span>
             </Link>
             <div className="flex items-center gap-4">
               <a
@@ -294,7 +294,7 @@ export default function TopWeddingPlannersInVadodaraPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Users className="w-5 h-5" />
-                  <span>500+ Weddings</span>
+                  <span>2000+ Weddings</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -348,7 +348,7 @@ export default function TopWeddingPlannersInVadodaraPage() {
             </div>
             <div className="flex flex-col items-center">
               <Users className="w-10 h-10 text-green-600 mb-2" />
-              <p className="font-bold text-2xl">500+</p>
+              <p className="font-bold text-2xl">2000+</p>
               <p className="text-gray-600 text-sm">Weddings Planned</p>
             </div>
             <div className="flex flex-col items-center">
@@ -648,12 +648,12 @@ export default function TopWeddingPlannersInVadodaraPage() {
                 <p className="opacity-90">+91 63535 83148</p>
               </a>
               <a
-                href="mailto:info@weddingplannersinvadodara.in"
+                href="mailto:hello@primeoneweddings.in"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@weddingplannersinvadodara.in</p>
+                <p className="opacity-90">hello@primeoneweddings.in</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />

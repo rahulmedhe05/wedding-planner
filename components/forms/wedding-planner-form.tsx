@@ -176,7 +176,7 @@ export function WeddingPlannerForm({ area, keyword }: WeddingPlannerFormProps) {
                     <h3 className="text-xl font-bold mb-1">Call Us Now</h3>
                     <p className="text-white/80 text-sm mb-2">Mon-Sun: 10 AM - 9 PM</p>
                     <a href="tel:+916353583148" className="text-lg font-semibold hover:underline">
-                      +91 98765 43210
+                      +91 63535 83148
                     </a>
                   </div>
                 </div>

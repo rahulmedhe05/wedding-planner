@@ -7,19 +7,23 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { MessageCircle, Phone, CheckCircle } from "lucide-react";
 
 interface KeywordEnquiryFormProps {
-  keywordTitle: string;
+  keywordTitle?: string;
+  keyword?: string; // backward compatibility
+  source?: string;
+  inline?: boolean;
 }
 
 const whyChooseUs = [
-  "500+ Weddings Successfully Planned",
-  "15+ Years of Experience in Vadodara",
+  "2000+ Weddings Successfully Planned by PrimeOne",
+  "Trusted Since 2010 in Vadodara",
   "Dedicated Wedding Planning Team",
   "Transparent Pricing & No Hidden Costs",
   "End-to-End Wedding Management",
   "40+ Areas Covered in Vadodara",
 ];
 
-export function KeywordEnquiryForm({ keywordTitle }: KeywordEnquiryFormProps) {
+export function KeywordEnquiryForm({ keywordTitle, keyword, source, inline }: KeywordEnquiryFormProps) {
+  const title = keywordTitle || keyword || "Wedding Planning";
   const [formData, setFormData] = useState({
     fullName: "",
     mobile: "",
@@ -33,14 +37,16 @@ export function KeywordEnquiryForm({ keywordTitle }: KeywordEnquiryFormProps) {
     e.preventDefault();
     setIsSubmitting(true);
     
-    const message = `Hi, I'm interested in ${keywordTitle} in Vadodara!
+    const message = `Hi, I'm interested in ${title} in Vadodara!
 
+*PrimeOne Wedding Planners Enquiry*
 *Details:*
 - Name: ${formData.fullName}
 - Mobile: ${formData.mobile}
 - Event Type: ${formData.eventType}
 - Wedding Style: ${formData.weddingStyle}
 - Expected Date: ${formData.eventDate}
+${source ? `- Source: ${source}` : ""}
 
 Please share more information about your services and packages.`;
 
@@ -49,13 +55,80 @@ Please share more information about your services and packages.`;
     setIsSubmitting(false);
   };
 
+  // Inline form mode (for embedding in hero sections)
+  if (inline) {
+    return (
+      <form onSubmit={handleSubmit} className="space-y-3">
+        <Input
+          placeholder="Your Full Name"
+          value={formData.fullName}
+          onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+          required
+          className="bg-gray-50 border-gray-200 py-5"
+        />
+        <Input
+          type="tel"
+          placeholder="Mobile Number"
+          value={formData.mobile}
+          onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
+          required
+          className="bg-gray-50 border-gray-200 py-5"
+        />
+        <Select
+          value={formData.eventType}
+          onValueChange={(value) => setFormData({ ...formData, eventType: value })}
+        >
+          <SelectTrigger className="bg-gray-50 border-gray-200 py-5">
+            <SelectValue placeholder="Select Event Type" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="Wedding">Wedding</SelectItem>
+            <SelectItem value="Engagement">Engagement</SelectItem>
+            <SelectItem value="Reception">Reception</SelectItem>
+            <SelectItem value="Destination Wedding">Destination Wedding</SelectItem>
+            <SelectItem value="Pre-Wedding">Pre-Wedding Events</SelectItem>
+          </SelectContent>
+        </Select>
+        <Select
+          value={formData.weddingStyle}
+          onValueChange={(value) => setFormData({ ...formData, weddingStyle: value })}
+        >
+          <SelectTrigger className="bg-gray-50 border-gray-200 py-5">
+            <SelectValue placeholder="Select Wedding Style" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="Traditional">Traditional</SelectItem>
+            <SelectItem value="Luxury">Luxury</SelectItem>
+            <SelectItem value="Theme-Based">Theme-Based</SelectItem>
+            <SelectItem value="Budget-Friendly">Budget-Friendly</SelectItem>
+            <SelectItem value="Royal">Royal Wedding</SelectItem>
+          </SelectContent>
+        </Select>
+        <Input
+          placeholder="Expected Event Date"
+          value={formData.eventDate}
+          onChange={(e) => setFormData({ ...formData, eventDate: e.target.value })}
+          className="bg-gray-50 border-gray-200 py-5"
+        />
+        <Button
+          type="submit"
+          disabled={isSubmitting}
+          className="w-full bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-700 hover:to-pink-700 text-white font-semibold py-5 text-lg"
+        >
+          <MessageCircle className="w-5 h-5 mr-2" />
+          Get Free Quote
+        </Button>
+      </form>
+    );
+  }
+
   return (
     <section className="py-12 md:py-16 bg-gradient-to-br from-pink-50 to-rose-50">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">
-              Get Free Wedding Planning Quote in Vadodara
+              Get Free Wedding Planning Quote from PrimeOne
             </h2>
             <p className="text-gray-600">
               Fill the form below and our wedding planning experts will contact you within 24 hours

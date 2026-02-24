@@ -183,7 +183,7 @@ export function BusinessNav({ currentBusiness, currentArea }: BusinessNavProps) 
                 className="flex items-center justify-center gap-2 bg-white text-gray-900 px-4 py-3 rounded-full font-semibold"
               >
                 <Phone className="w-4 h-4" />
-                Call Now: +91 98765 43210
+                Call Now: +91 63535 83148
               </a>
             </div>
           </div>

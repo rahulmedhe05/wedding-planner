@@ -13,10 +13,10 @@ export function ContactForm() {
   const [formData, setFormData] = useState({
     fullName: "",
     phoneNumber: "",
-    propertyType: "",
+    eventType: "",
+    weddingDate: "",
+    guestCount: "",
     budget: "",
-    city: "",
-    preference: "",
   })
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -26,31 +26,28 @@ export function ContactForm() {
     addLead({
       fullName: formData.fullName,
       phoneNumber: formData.phoneNumber,
-      propertyType: formData.propertyType,
+      propertyType: formData.eventType,
       budget: formData.budget,
-      city: formData.city,
-      preference: formData.preference,
+      city: formData.guestCount,
     })
 
     // Construct WhatsApp message
     const message = `
-✨ *INTERIOR DESIGN ENQUIRY* ✨
+💒 *WEDDING PLANNING ENQUIRY* 💒
 
 • *Full Name:* ${formData.fullName}
 • *Phone Number:* ${formData.phoneNumber}
-• *Property Type:* ${formData.propertyType}
-• *City:* ${formData.city}
+• *Event Type:* ${formData.eventType}
+• *Wedding Date:* ${formData.weddingDate || 'Not decided yet'}
+• *Guest Count:* ${formData.guestCount || 'Not specified'}
 • *Budget:* ${formData.budget || 'Not specified'}
 
 ―――――――――――――
-_Sent via Nesture Interiors Website_
+_Sent via PrimeOne Wedding Planners Website_
     `.trim()
 
-    // Replace with your WhatsApp number (include country code without + sign)
-    const whatsappNumber = "918618080171"
+    const whatsappNumber = "916353583148"
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
-
-    // Open WhatsApp
     window.open(whatsappURL, "_blank")
   }
 
@@ -62,10 +59,10 @@ _Sent via Nesture Interiors Website_
       <div className="container mx-auto px-3 sm:px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 md:mb-12">
-            <p className="text-accent font-mono uppercase tracking-wider mb-2 md:mb-4 text-xs sm:text-sm">Get Your Interior Design Consultation</p>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-balance">Transform Your Space With Professional Design</h2>
+            <p className="text-accent font-mono uppercase tracking-wider mb-2 md:mb-4 text-xs sm:text-sm">Book Your Free Consultation</p>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-balance">Plan Your Dream Wedding With PrimeOne</h2>
             <p className="text-sm sm:text-base md:text-xl text-primary-foreground/90 font-mono leading-relaxed max-w-2xl mx-auto">
-              {"Our expert interior designers will create stunning spaces tailored to your style. Fill the form below and we'll connect with you on WhatsApp instantly"}
+              {"Our expert wedding planners will craft the perfect celebration for you. Fill the form below and we'll connect with you on WhatsApp instantly"}
             </p>
           </div>
 
@@ -104,38 +101,35 @@ _Sent via Nesture Interiors Website_
                 </div>
 
                 <div>
-                  <label htmlFor="propertyType" className="block text-sm font-mono text-card-foreground mb-2">
-                    3. Property Type <span className="text-destructive">*</span>
+                  <label htmlFor="eventType" className="block text-sm font-mono text-card-foreground mb-2">
+                    3. Event Type <span className="text-destructive">*</span>
                   </label>
                   <select
-                    id="propertyType"
-                    value={formData.propertyType}
-                    onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
+                    id="eventType"
+                    value={formData.eventType}
+                    onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
                     required
                     className="w-full bg-background border border-border text-foreground rounded-md px-3 py-2 text-sm"
                   >
-                    <option value="">Select Property Type</option>
-                    <option value="1BHK">1BHK</option>
-                    <option value="2BHK">2BHK</option>
-                    <option value="3BHK">3BHK</option>
-                    <option value="Villa">Villa</option>
-                    <option value="Bungalow">Bungalow</option>
-                    <option value="Commercial">Commercial</option>
-                    <option value="Office">Office</option>
+                    <option value="">Select Event Type</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Engagement">Engagement</option>
+                    <option value="Haldi & Mehndi">Haldi & Mehndi</option>
+                    <option value="Sangeet & Reception">Sangeet & Reception</option>
+                    <option value="Destination Wedding">Destination Wedding</option>
+                    <option value="Complete Wedding Package">Complete Wedding Package</option>
                   </select>
                 </div>
 
                 <div>
-                  <label htmlFor="city" className="block text-sm font-mono text-card-foreground mb-2">
-                    4. City <span className="text-destructive">*</span>
+                  <label htmlFor="weddingDate" className="block text-sm font-mono text-card-foreground mb-2">
+                    4. Wedding Date
                   </label>
                   <Input
-                    id="city"
-                    type="text"
-                    placeholder="Enter your city"
-                    value={formData.city}
-                    onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                    required
+                    id="weddingDate"
+                    type="date"
+                    value={formData.weddingDate}
+                    onChange={(e) => setFormData({ ...formData, weddingDate: e.target.value })}
                     className="bg-background border-border text-foreground"
                   />
                 </div>
@@ -172,10 +166,10 @@ _Sent via Nesture Interiors Website_
                     <h3 className="text-xl font-bold mb-2">Call Us</h3>
                     <p className="text-primary-foreground/80 font-mono mb-2">Available 9 AM - 9 PM</p>
                     <a
-                      href="tel:+918618080171"
+                      href="tel:+916353583148"
                       className="text-lg font-mono text-accent hover:text-secondary transition-colors"
                     >
-                      +91 861 808 0171
+                      +91 63535 83148
                     </a>
                   </div>
                 </div>
@@ -190,7 +184,7 @@ _Sent via Nesture Interiors Website_
                     <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
                     <p className="text-primary-foreground/80 font-mono mb-2">Quick response guaranteed</p>
                     <a
-                      href="https://wa.me/918618080171"
+                      href="https://wa.me/916353583148"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-lg font-mono text-accent hover:text-secondary transition-colors"
@@ -205,11 +199,11 @@ _Sent via Nesture Interiors Website_
                 <h3 className="text-xl font-bold mb-4">Why Contact Us?</h3>
                 <ul className="space-y-3">
                   {[
-                    "Free consultation and design guidance",
+                    "Free wedding consultation and guidance",
                     "Instant quotes on WhatsApp",
                     "Same-day response to all queries",
                     "Flexible appointment scheduling",
-                    "On-site service available across Bangalore",
+                    "Service available across Vadodara & Gujarat",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />

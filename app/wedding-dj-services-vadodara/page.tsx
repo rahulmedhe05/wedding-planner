@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   description: "Professional wedding DJ services in Vadodara. Sangeet DJ, reception music, sound systems & lighting for unforgettable celebrations. Book now!",
   keywords: "wedding dj services vadodara, dj for wedding vadodara, sangeet dj vadodara, wedding music vadodara",
   openGraph: { title: "Wedding DJ Services Vadodara | Party Entertainment", description: "Expert DJ services for weddings in Vadodara.", type: "website", locale: "en_IN" },
-  alternates: { canonical: `https://weddingplannersinvadodara.in/${keywordSlug}/` },
+  alternates: { canonical: `https://primeoneweddings.in/${keywordSlug}/` },
 };
 
 export default function Page() {
@@ -77,7 +77,7 @@ export default function Page() {
     <div className="min-h-screen bg-white">
       <nav className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2"><span className="text-2xl">💒</span><span className="font-bold text-lg text-pink-700">Wedding Planners Vadodara</span></Link>
+          <Link href="/" className="flex items-center gap-2"><img src="/icon.svg" alt="PrimeOne" className="w-8 h-8" /><span className="font-bold text-lg text-pink-700">PrimeOne Wedding Planners</span></Link>
           <div className="flex items-center gap-4">
             <a href="tel:+916353583148" className="hidden md:flex items-center gap-2 text-pink-600 font-semibold"><Phone className="w-4 h-4" />+91 63535 83148</a>
             <a href="https://wa.me/916353583148" className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-600">WhatsApp</a>
@@ -206,7 +206,7 @@ export default function Page() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact {keyword}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <a href="tel:+916353583148" className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20"><Phone className="w-8 h-8 mb-3" /><p className="font-bold">Call</p><p>+91 63535 83148</p></a>
-            <a href="mailto:info@weddingplannersinvadodara.in" className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20"><Mail className="w-8 h-8 mb-3" /><p className="font-bold">Email</p><p className="text-sm">info@weddingplannersinvadodara.in</p></a>
+            <a href="mailto:hello@primeoneweddings.in" className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20"><Mail className="w-8 h-8 mb-3" /><p className="font-bold">Email</p><p className="text-sm">hello@primeoneweddings.in</p></a>
             <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl"><MapPin className="w-8 h-8 mb-3" /><p className="font-bold">Location</p><p>Vadodara, Gujarat</p></div>
           </div>
         </div>
